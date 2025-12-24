@@ -1,0 +1,87 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Container } from "@/components/ui/Container";
+import { Card, CardContent } from "@/components/ui/Card";
+import { attorneys } from "@/data/attorneys";
+import { Mail, Phone } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Our Attorneys",
+  description:
+    "Meet the experienced attorneys at Advokata Partners who deliver exceptional results for clients across practice areas.",
+};
+
+export default function AttorneysPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="bg-navy pt-32 pb-20">
+        <Container>
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
+              Our Attorneys
+            </h1>
+            <p className="text-white/80 text-lg leading-relaxed">
+              Our attorneys bring diverse backgrounds and deep expertise to every
+              matter. Each member of our team is committed to delivering
+              exceptional service and achieving the best possible outcomes for
+              our clients.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Attorneys Grid */}
+      <section className="py-20 bg-ivory">
+        <Container>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {attorneys.map((attorney) => (
+              <Link key={attorney.id} href={`/attorneys/${attorney.slug}`}>
+                <Card className="h-full group">
+                  {/* Photo Placeholder */}
+                  <div className="relative aspect-[4/5] bg-navy/10 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                      <div className="flex gap-3">
+                        <span className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-gold transition-colors">
+                          <Mail className="h-4 w-4 text-white" />
+                        </span>
+                        <span className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-gold transition-colors">
+                          <Phone className="h-4 w-4 text-white" />
+                        </span>
+                      </div>
+                    </div>
+                    {/* Placeholder initials */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-6xl font-heading font-bold text-navy/20">
+                        {attorney.name
+                          .split(" ")
+                          .map((n) => n[0])
+                          .join("")}
+                      </span>
+                    </div>
+                  </div>
+
+                  <CardContent className="p-6">
+                    <h2 className="font-heading text-xl font-semibold text-navy group-hover:text-gold transition-colors">
+                      {attorney.name}
+                    </h2>
+                    <p className="text-gold font-medium mt-1">{attorney.title}</p>
+                    <p className="text-charcoal/60 text-sm mt-3">
+                      {attorney.practiceAreas.join(" | ")}
+                    </p>
+                    <div className="mt-4 pt-4 border-t border-silver/20">
+                      <div className="flex items-center gap-2 text-sm text-charcoal/70">
+                        <Mail className="h-4 w-4" />
+                        <span className="truncate">{attorney.email}</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}

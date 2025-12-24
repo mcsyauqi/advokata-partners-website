@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Colors */
+  --navy-primary: #1E3A5F;
+  --gold-accent: #B8860B;
+  --charcoal: #1F2937;
+  --ivory: #FDFBF7;
+  --burgundy: #6B1829;
+  --silver: #9CA3AF;
+
+  /* Semantic Colors */
+  --background: var(--ivory);
+  --foreground: var(--charcoal);
+
+  /* Additional shades */
+  --navy-light: #2B4F7A;
+  --navy-dark: #152A45;
+  --gold-light: #D4A017;
+  --gold-dark: #8B6914;
+  --ivory-dark: #F5F0E8;
+
+  /* Fonts */
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-source-serif: "Source Serif 4", Georgia, serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy-primary);
+  --color-navy-light: var(--navy-light);
+  --color-navy-dark: var(--navy-dark);
+  --color-gold: var(--gold-accent);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-charcoal: var(--charcoal);
+  --color-ivory: var(--ivory);
+  --color-ivory-dark: var(--ivory-dark);
+  --color-burgundy: var(--burgundy);
+  --color-silver: var(--silver);
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-source-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-source-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
+
+.font-heading {
+  font-family: var(--font-playfair);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ivory-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-light);
+}
+
+/* Selection color */
+::selection {
+  background: var(--gold-accent);
+  color: white;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--gold-accent);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for links */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Prose styles for article content */
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
