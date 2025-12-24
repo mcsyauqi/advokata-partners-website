@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const insight = getInsightBySlug(slug);
 
   if (!insight) {
-    return { title: "Article Not Found" };
+    return { title: "Artikel Tidak Ditemukan" };
   }
 
   return {
@@ -67,7 +67,7 @@ export default async function InsightPage({ params }: PageProps) {
             className="inline-flex items-center text-white/70 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            All Insights
+            Semua Artikel
           </Link>
 
           <span className="inline-block bg-gold text-white text-sm font-medium px-4 py-1 rounded-full mb-6">
@@ -81,9 +81,9 @@ export default async function InsightPage({ params }: PageProps) {
           <div className="flex flex-wrap items-center gap-6 text-white/70">
             <span className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
-              {new Date(insight.date).toLocaleDateString("en-US", {
-                month: "long",
+              {new Date(insight.date).toLocaleDateString("id-ID", {
                 day: "numeric",
+                month: "long",
                 year: "numeric",
               })}
             </span>
@@ -127,7 +127,7 @@ export default async function InsightPage({ params }: PageProps) {
               <div className="lg:sticky lg:top-24 space-y-6">
                 <div className="flex lg:flex-col gap-3">
                   <span className="text-sm text-charcoal/60 hidden lg:block mb-2">
-                    Share this article
+                    Bagikan artikel ini
                   </span>
                   <button className="p-3 bg-white rounded-full shadow-sm hover:bg-[#0077B5] hover:text-white transition-colors">
                     <Linkedin className="h-5 w-5" />
@@ -171,7 +171,7 @@ export default async function InsightPage({ params }: PageProps) {
                       </div>
                       <div>
                         <p className="text-sm text-charcoal/60 mb-1">
-                          Written by
+                          Ditulis oleh
                         </p>
                         <h3 className="font-heading text-xl font-semibold text-navy">
                           {author.name}
@@ -186,7 +186,7 @@ export default async function InsightPage({ params }: PageProps) {
                           href={`/attorneys/${author.slug}`}
                           className="inline-flex items-center text-gold text-sm font-medium mt-4 hover:gap-2 transition-all"
                         >
-                          View Profile
+                          Lihat Profil
                           <ArrowRight className="h-4 w-4 ml-1" />
                         </Link>
                       </div>
@@ -199,7 +199,7 @@ export default async function InsightPage({ params }: PageProps) {
               {relatedInsights.length > 0 && (
                 <div className="mt-16">
                   <h2 className="font-heading text-2xl font-bold text-navy mb-8">
-                    Related Articles
+                    Artikel Terkait
                   </h2>
                   <div className="grid sm:grid-cols-3 gap-6">
                     {relatedInsights.map((related) => (
@@ -241,15 +241,15 @@ export default async function InsightPage({ params }: PageProps) {
         <Container>
           <div className="text-center">
             <h2 className="font-heading text-2xl font-bold text-navy mb-4">
-              Need Legal Guidance?
+              Butuh Panduan Hukum?
             </h2>
             <p className="text-charcoal/70 mb-6 max-w-2xl mx-auto">
-              Our attorneys are ready to discuss how these developments may impact
-              your business.
+              Pengacara kami siap mendiskusikan bagaimana perkembangan ini dapat
+              mempengaruhi bisnis Anda.
             </p>
             <Button variant="gold" size="lg" asChild>
               <Link href="/contact">
-                Schedule a Consultation
+                Jadwalkan Konsultasi
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
             </Button>

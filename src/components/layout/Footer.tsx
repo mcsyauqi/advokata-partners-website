@@ -6,42 +6,43 @@ import {
   Mail,
   Linkedin,
   Twitter,
+  Instagram,
   ArrowRight,
 } from "lucide-react";
 
-const practiceAreas = [
-  { name: "Corporate Law", href: "/practice-areas/corporate-law" },
-  { name: "Mergers & Acquisitions", href: "/practice-areas/mergers-acquisitions" },
-  { name: "Real Estate", href: "/practice-areas/real-estate" },
-  { name: "Intellectual Property", href: "/practice-areas/intellectual-property" },
-  { name: "Litigation", href: "/practice-areas/litigation" },
-  { name: "Banking & Finance", href: "/practice-areas/banking-finance" },
+const layananHukum = [
+  { name: "Hukum Korporasi", href: "/practice-areas/corporate-law" },
+  { name: "Merger & Akuisisi", href: "/practice-areas/mergers-acquisitions" },
+  { name: "Properti & Real Estat", href: "/practice-areas/real-estate" },
+  { name: "Kekayaan Intelektual", href: "/practice-areas/intellectual-property" },
+  { name: "Litigasi", href: "/practice-areas/litigation" },
+  { name: "Perbankan & Keuangan", href: "/practice-areas/banking-finance" },
 ];
 
-const quickLinks = [
-  { name: "Our Attorneys", href: "/attorneys" },
-  { name: "About the Firm", href: "/about" },
-  { name: "Legal Insights", href: "/insights" },
-  { name: "Careers", href: "/careers" },
-  { name: "Contact Us", href: "/contact" },
-  { name: "Privacy Policy", href: "/privacy" },
+const linkCepat = [
+  { name: "Tim Pengacara", href: "/attorneys" },
+  { name: "Tentang Kami", href: "/about" },
+  { name: "Artikel Hukum", href: "/insights" },
+  { name: "Karir", href: "/careers" },
+  { name: "Hubungi Kami", href: "/contact" },
+  { name: "Kebijakan Privasi", href: "/privacy" },
 ];
 
-const offices = [
+const kantorKami = [
   {
-    city: "New York",
-    address: "350 Fifth Avenue, Suite 4500",
-    phone: "+1 (555) 123-4000",
+    city: "Jakarta Pusat",
+    address: "Jl. Sudirman Kav. 52-53, Gedung BNI 46 Lt. 35",
+    phone: "+62 21 1234 5678",
   },
   {
-    city: "Washington, DC",
-    address: "1200 Pennsylvania Avenue NW",
-    phone: "+1 (555) 123-4100",
+    city: "Jakarta Selatan",
+    address: "Jl. TB Simatupang No. 18, Cilandak",
+    phone: "+62 21 2345 6789",
   },
   {
-    city: "London",
-    address: "30 St Mary Axe",
-    phone: "+44 20 7123 4000",
+    city: "Surabaya",
+    address: "Jl. Basuki Rahmat No. 100, Surabaya",
+    phone: "+62 31 3456 7890",
   },
 ];
 
@@ -57,9 +58,9 @@ export function Footer() {
               ADVOKATA <span className="text-gold">PARTNERS</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              A leading corporate and commercial law firm providing exceptional
-              legal counsel since 1995. We are committed to protecting your
-              interests and building your future.
+              Firma hukum korporasi dan komersial terkemuka yang menyediakan
+              layanan hukum berkualitas tinggi sejak 1995. Kami berkomitmen
+              melindungi kepentingan Anda dan membangun masa depan yang lebih baik.
             </p>
             <div className="flex gap-4">
               <a
@@ -80,16 +81,25 @@ export function Footer() {
               >
                 <Twitter className="h-5 w-5" />
               </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white/10 rounded-full hover:bg-gold transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
-          {/* Practice Areas */}
+          {/* Layanan Hukum */}
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6 text-gold">
-              Practice Areas
+              Layanan Hukum
             </h3>
             <ul className="space-y-3">
-              {practiceAreas.map((area) => (
+              {layananHukum.map((area) => (
                 <li key={area.name}>
                   <Link
                     href={area.href}
@@ -103,13 +113,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Link Cepat */}
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6 text-gold">
-              Quick Links
+              Link Cepat
             </h3>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
+              {linkCepat.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
@@ -123,13 +133,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Kantor Kami */}
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6 text-gold">
-              Our Offices
+              Kantor Kami
             </h3>
             <div className="space-y-6">
-              {offices.map((office) => (
+              {kantorKami.map((office) => (
                 <div key={office.city} className="space-y-2">
                   <h4 className="font-medium text-white">{office.city}</h4>
                   <div className="flex items-start gap-2 text-white/70 text-sm">
@@ -152,18 +162,32 @@ export function Footer() {
         <Container className="py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
             <p>
-              &copy; {new Date().getFullYear()} Advokata Partners LLP. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Advokata Partners. Hak Cipta Dilindungi.
             </p>
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <a
-                href="mailto:info@advokata.com"
-                className="hover:text-gold transition-colors"
-              >
-                info@advokata.com
-              </a>
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <a
+                  href="mailto:info@advokata.co.id"
+                  className="hover:text-gold transition-colors"
+                >
+                  info@advokata.co.id
+                </a>
+              </div>
             </div>
+          </div>
+          <div className="text-center mt-4 pt-4 border-t border-white/10">
+            <p className="text-sm text-white/40">
+              Created by{" "}
+              <a
+                href="https://creativism.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold hover:text-gold-light transition-colors font-medium"
+              >
+                Creativism Digital Marketing
+              </a>
+            </p>
           </div>
         </Container>
       </div>

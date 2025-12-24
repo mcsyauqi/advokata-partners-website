@@ -7,19 +7,19 @@ import { insights } from "@/data/insights";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Insights",
+  title: "Artikel Hukum",
   description:
-    "Legal insights, industry analysis, and expert commentary from Advokata Partners attorneys.",
+    "Artikel hukum, analisis industri, dan komentar ahli dari pengacara Advokata Partners.",
 };
 
 const categories = [
-  "All",
-  "Corporate Law",
-  "Mergers & Acquisitions",
-  "Real Estate",
-  "Intellectual Property",
-  "Litigation",
-  "Banking & Finance",
+  "Semua",
+  "Hukum Korporasi",
+  "Merger & Akuisisi",
+  "Properti & Real Estat",
+  "Kekayaan Intelektual",
+  "Litigasi",
+  "Perbankan & Keuangan",
 ];
 
 export default function InsightsPage() {
@@ -30,12 +30,12 @@ export default function InsightsPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-              Legal Insights
+              Artikel Hukum
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Stay informed with the latest legal developments, industry analysis,
-              and expert commentary from our attorneys. Our insights help you
-              navigate complex legal issues and make informed business decisions.
+              Tetap terinformasi dengan perkembangan hukum terbaru, analisis industri,
+              dan komentar ahli dari pengacara kami. Artikel kami membantu Anda
+              menavigasi isu hukum kompleks dan membuat keputusan bisnis yang tepat.
             </p>
           </div>
         </Container>
@@ -49,7 +49,7 @@ export default function InsightsPage() {
               <button
                 key={category}
                 className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
-                  category === "All"
+                  category === "Semua"
                     ? "bg-navy text-white"
                     : "bg-white text-charcoal hover:bg-navy hover:text-white"
                 }`}
@@ -92,9 +92,9 @@ export default function InsightsPage() {
                     <div className="flex items-center gap-4 text-sm text-charcoal/50 mb-4">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
-                        {new Date(insights[0].date).toLocaleDateString("en-US", {
-                          month: "short",
+                        {new Date(insights[0].date).toLocaleDateString("id-ID", {
                           day: "numeric",
+                          month: "short",
                           year: "numeric",
                         })}
                       </span>
@@ -118,7 +118,7 @@ export default function InsightsPage() {
                         <span>{insights[0].author}</span>
                       </div>
                       <span className="flex items-center text-gold font-medium group-hover:gap-2 transition-all">
-                        Read Article
+                        Baca Artikel
                         <ArrowRight className="h-4 w-4 ml-1" />
                       </span>
                     </div>
@@ -154,9 +154,9 @@ export default function InsightsPage() {
                     <div className="flex items-center gap-4 text-sm text-charcoal/50 mb-3">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
-                        {new Date(insight.date).toLocaleDateString("en-US", {
-                          month: "short",
+                        {new Date(insight.date).toLocaleDateString("id-ID", {
                           day: "numeric",
+                          month: "short",
                           year: "numeric",
                         })}
                       </span>
@@ -187,23 +187,22 @@ export default function InsightsPage() {
           {/* Newsletter Signup */}
           <div className="mt-20 bg-navy rounded-lg p-8 md:p-12 text-center">
             <h2 className="font-heading text-2xl font-bold text-white mb-4">
-              Subscribe to Our Newsletter
+              Berlangganan Newsletter Kami
             </h2>
             <p className="text-white/80 mb-8 max-w-xl mx-auto">
-              Receive the latest legal insights and industry updates directly in
-              your inbox.
+              Dapatkan artikel hukum terbaru dan update industri langsung di inbox Anda.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Masukkan email Anda"
                 className="flex-1 px-4 py-3 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-gold"
               />
               <button
                 type="submit"
                 className="px-6 py-3 bg-gold text-white font-medium rounded-md hover:bg-gold-dark transition-colors"
               >
-                Subscribe
+                Berlangganan
               </button>
             </form>
           </div>

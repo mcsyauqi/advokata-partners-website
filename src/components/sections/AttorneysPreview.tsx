@@ -21,8 +21,8 @@ export function AttorneysPreview() {
       <Container>
         <AnimatedSection>
           <SectionHeading
-            title="Our Leadership Team"
-            subtitle="Meet the experienced attorneys who lead our practice and deliver exceptional results for clients."
+            title="Tim Kepemimpinan Kami"
+            subtitle="Temui para pengacara berpengalaman yang memimpin praktik kami dan memberikan hasil luar biasa bagi klien."
           />
         </AnimatedSection>
 
@@ -70,7 +70,7 @@ export function AttorneysPreview() {
         <AnimatedSection delay={0.4} className="text-center mt-12">
           <Button variant="secondary" size="lg" asChild>
             <Link href="/attorneys" className="flex items-center gap-2">
-              View All Attorneys
+              Lihat Semua Pengacara
               <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>

@@ -17,35 +17,35 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Careers",
+  title: "Karir",
   description:
-    "Join Advokata Partners. Explore legal career opportunities with a leading corporate law firm.",
+    "Bergabunglah dengan Advokata Partners. Jelajahi peluang karir hukum dengan firma hukum korporasi terkemuka.",
 };
 
 const benefits = [
   {
     icon: TrendingUp,
-    title: "Career Growth",
+    title: "Pengembangan Karir",
     description:
-      "Clear path to partnership with mentorship from experienced attorneys.",
+      "Jalur yang jelas menuju partnership dengan bimbingan dari pengacara senior berpengalaman.",
   },
   {
     icon: GraduationCap,
-    title: "Professional Development",
+    title: "Pengembangan Profesional",
     description:
-      "Ongoing training, CLE programs, and support for advanced degrees.",
+      "Pelatihan berkelanjutan, program PKPA, dan dukungan untuk gelar lanjutan.",
   },
   {
     icon: Heart,
-    title: "Comprehensive Benefits",
+    title: "Benefit Komprehensif",
     description:
-      "Health insurance, 401(k) matching, and generous paid time off.",
+      "Asuransi kesehatan, tunjangan hari tua, dan cuti berbayar yang memadai.",
   },
   {
     icon: Users,
-    title: "Collaborative Culture",
+    title: "Budaya Kolaboratif",
     description:
-      "Work alongside talented colleagues in a supportive, team-oriented environment.",
+      "Bekerja bersama kolega berbakat dalam lingkungan yang mendukung dan berorientasi tim.",
   },
 ];
 
@@ -57,12 +57,12 @@ export default function CareersPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-              Join Our Team
+              Bergabunglah dengan Tim Kami
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              At Advokata Partners, we are committed to attracting and developing
-              exceptional legal talent. Join a firm where your contributions are
-              valued, your growth is supported, and your career can thrive.
+              Di Advokata Partners, kami berkomitmen untuk menarik dan mengembangkan
+              talenta hukum yang luar biasa. Bergabunglah dengan firma di mana kontribusi Anda
+              dihargai, pertumbuhan Anda didukung, dan karir Anda dapat berkembang.
             </p>
           </div>
         </Container>
@@ -73,11 +73,11 @@ export default function CareersPage() {
         <Container>
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-4">
-              Why Advokata Partners?
+              Mengapa Advokata Partners?
             </h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              We offer more than just a job – we offer a career with purpose,
-              growth, and exceptional rewards.
+              Kami menawarkan lebih dari sekadar pekerjaan – kami menawarkan karir dengan
+              tujuan, pertumbuhan, dan penghargaan yang luar biasa.
             </p>
             <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
           </div>
@@ -107,11 +107,10 @@ export default function CareersPage() {
         <Container>
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-4">
-              Open Positions
+              Lowongan Tersedia
             </h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              Explore our current opportunities and find the role that's right
-              for you.
+              Jelajahi peluang kami saat ini dan temukan posisi yang tepat untuk Anda.
             </p>
             <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
           </div>
@@ -129,7 +128,7 @@ export default function CareersPage() {
                         </h3>
                         <span
                           className={`px-3 py-1 text-xs font-medium rounded-full ${
-                            job.type === "Full-time"
+                            job.type === "Penuh Waktu"
                               ? "bg-green-100 text-green-700"
                               : "bg-blue-100 text-blue-700"
                           }`}
@@ -153,10 +152,10 @@ export default function CareersPage() {
                         </span>
                         <span className="flex items-center gap-1">
                           <Calendar className="h-4 w-4" />
-                          Posted{" "}
-                          {new Date(job.postedDate).toLocaleDateString("en-US", {
-                            month: "short",
+                          Diposting{" "}
+                          {new Date(job.postedDate).toLocaleDateString("id-ID", {
                             day: "numeric",
+                            month: "short",
                             year: "numeric",
                           })}
                         </span>
@@ -167,9 +166,9 @@ export default function CareersPage() {
                     <div className="flex items-center justify-start md:justify-end">
                       <Button variant="gold" asChild>
                         <a
-                          href={`mailto:careers@advokata.com?subject=Application: ${job.title}`}
+                          href={`mailto:karir@advokata.co.id?subject=Lamaran: ${job.title}`}
                         >
-                          Apply Now
+                          Lamar Sekarang
                           <ArrowRight className="h-4 w-4 ml-2" />
                         </a>
                       </Button>
@@ -181,7 +180,7 @@ export default function CareersPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-semibold text-navy text-sm mb-2">
-                          Requirements
+                          Persyaratan
                         </h4>
                         <ul className="space-y-1">
                           {job.requirements.slice(0, 3).map((req, index) => (
@@ -197,7 +196,7 @@ export default function CareersPage() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-navy text-sm mb-2">
-                          Key Responsibilities
+                          Tanggung Jawab Utama
                         </h4>
                         <ul className="space-y-1">
                           {job.responsibilities.slice(0, 3).map((resp, index) => (
@@ -226,41 +225,40 @@ export default function CareersPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-heading text-3xl font-bold text-navy mb-6">
-                Summer Associate Program
+                Program Magang
               </h2>
               <p className="text-charcoal/80 leading-relaxed mb-6">
-                Our Summer Associate Program offers law students an immersive
-                experience in the practice of law. Summer Associates work on
-                substantive matters alongside our attorneys, receiving mentorship
-                and training while experiencing the culture of our firm.
+                Program Magang kami menawarkan mahasiswa hukum pengalaman mendalam
+                dalam praktik hukum. Peserta magang bekerja pada perkara substantif
+                bersama pengacara kami, menerima bimbingan dan pelatihan sambil
+                merasakan budaya firma kami.
               </p>
               <p className="text-charcoal/80 leading-relaxed mb-6">
-                The program includes rotations across practice groups, training
-                sessions, networking events, and community service opportunities.
-                Many of our current partners and associates began their careers
-                as Summer Associates.
+                Program ini mencakup rotasi di berbagai grup praktik, sesi pelatihan,
+                acara networking, dan kesempatan pelayanan masyarakat. Banyak partner
+                dan associate kami saat ini memulai karir mereka sebagai peserta magang.
               </p>
               <Button variant="gold" size="lg" asChild>
-                <a href="mailto:careers@advokata.com?subject=Summer Associate Program Inquiry">
-                  Learn More About the Program
+                <a href="mailto:karir@advokata.co.id?subject=Pertanyaan Program Magang">
+                  Pelajari Lebih Lanjut
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </a>
               </Button>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">
-                Program Highlights
+                Keunggulan Program
               </h3>
               <ul className="space-y-4">
                 {[
-                  "10-week summer program",
-                  "Substantive work across practice areas",
-                  "Dedicated mentor and buddy system",
-                  "Professional development workshops",
-                  "Client meetings and deal exposure",
-                  "Social events and networking opportunities",
-                  "Competitive compensation",
-                  "Path to full-time offers",
+                  "Program magang 10 minggu",
+                  "Pekerjaan substantif di berbagai bidang praktik",
+                  "Sistem mentor dan buddy yang berdedikasi",
+                  "Workshop pengembangan profesional",
+                  "Eksposur rapat klien dan deal",
+                  "Acara sosial dan kesempatan networking",
+                  "Kompensasi kompetitif",
+                  "Jalur menuju penawaran penuh waktu",
                 ].map((item, index) => (
                   <li
                     key={index}
@@ -281,12 +279,12 @@ export default function CareersPage() {
         <Container>
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl font-bold text-white mb-4">
-              Don't See the Right Fit?
+              Tidak Menemukan Posisi yang Tepat?
             </h2>
             <p className="text-white/80 mb-8">
-              We're always interested in hearing from talented legal
-              professionals. Send us your resume and we'll keep you in mind for
-              future opportunities.
+              Kami selalu tertarik mendengar dari profesional hukum berbakat.
+              Kirimkan CV Anda dan kami akan mempertimbangkan Anda untuk peluang
+              di masa depan.
             </p>
             <Button
               variant="secondary"
@@ -294,8 +292,8 @@ export default function CareersPage() {
               asChild
               className="border-white text-white hover:bg-white hover:text-navy"
             >
-              <a href="mailto:careers@advokata.com">
-                Send Your Resume
+              <a href="mailto:karir@advokata.co.id">
+                Kirim CV Anda
                 <ArrowRight className="h-5 w-5 ml-2" />
               </a>
             </Button>

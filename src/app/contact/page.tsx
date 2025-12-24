@@ -20,49 +20,49 @@ import {
 } from "lucide-react";
 
 const contactSchema = z.object({
-  firstName: z.string().min(2, "First name is required"),
-  lastName: z.string().min(2, "Last name is required"),
-  email: z.string().email("Please enter a valid email"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
+  firstName: z.string().min(2, "Nama depan wajib diisi"),
+  lastName: z.string().min(2, "Nama belakang wajib diisi"),
+  email: z.string().email("Mohon masukkan email yang valid"),
+  phone: z.string().min(10, "Mohon masukkan nomor telepon yang valid"),
   company: z.string().optional(),
-  practiceArea: z.string().min(1, "Please select a practice area"),
-  message: z.string().min(10, "Please provide more details about your inquiry"),
+  practiceArea: z.string().min(1, "Mohon pilih bidang layanan"),
+  message: z.string().min(10, "Mohon berikan detail lebih lanjut tentang pertanyaan Anda"),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const practiceAreaOptions = [
-  { value: "", label: "Select a practice area" },
-  { value: "corporate-law", label: "Corporate Law" },
-  { value: "mergers-acquisitions", label: "Mergers & Acquisitions" },
-  { value: "real-estate", label: "Real Estate" },
-  { value: "intellectual-property", label: "Intellectual Property" },
-  { value: "litigation", label: "Litigation" },
-  { value: "banking-finance", label: "Banking & Finance" },
-  { value: "other", label: "Other" },
+  { value: "", label: "Pilih bidang layanan" },
+  { value: "corporate-law", label: "Hukum Korporasi" },
+  { value: "mergers-acquisitions", label: "Merger & Akuisisi" },
+  { value: "real-estate", label: "Properti & Real Estat" },
+  { value: "intellectual-property", label: "Kekayaan Intelektual" },
+  { value: "litigation", label: "Litigasi" },
+  { value: "banking-finance", label: "Perbankan & Keuangan" },
+  { value: "other", label: "Lainnya" },
 ];
 
 const offices = [
   {
-    city: "New York",
-    address: "350 Fifth Avenue, Suite 4500",
-    addressLine2: "New York, NY 10118",
-    phone: "+1 (555) 123-4000",
-    email: "newyork@advokata.com",
+    city: "Jakarta Pusat",
+    address: "Jl. Sudirman Kav. 52-53",
+    addressLine2: "Gedung BNI 46 Lt. 35",
+    phone: "+62 21 1234 5678",
+    email: "jakarta@advokata.co.id",
   },
   {
-    city: "Washington, DC",
-    address: "1200 Pennsylvania Avenue NW",
-    addressLine2: "Washington, DC 20004",
-    phone: "+1 (555) 123-4100",
-    email: "dc@advokata.com",
+    city: "Jakarta Selatan",
+    address: "Jl. TB Simatupang No. 18",
+    addressLine2: "Cilandak, Jakarta 12430",
+    phone: "+62 21 2345 6789",
+    email: "jaksel@advokata.co.id",
   },
   {
-    city: "London",
-    address: "30 St Mary Axe",
-    addressLine2: "London, EC3A 8BF",
-    phone: "+44 20 7123 4000",
-    email: "london@advokata.com",
+    city: "Surabaya",
+    address: "Jl. Basuki Rahmat No. 100",
+    addressLine2: "Surabaya, Jawa Timur 60271",
+    phone: "+62 31 3456 7890",
+    email: "surabaya@advokata.co.id",
   },
 ];
 
@@ -96,12 +96,12 @@ export default function ContactPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-              Contact Us
+              Hubungi Kami
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Ready to discuss your legal needs? Our attorneys are here to help.
-              Contact us to schedule a confidential consultation or learn more
-              about how we can assist you.
+              Siap mendiskusikan kebutuhan hukum Anda? Pengacara kami siap membantu.
+              Hubungi kami untuk menjadwalkan konsultasi rahasia atau pelajari lebih
+              lanjut tentang bagaimana kami dapat membantu Anda.
             </p>
           </div>
         </Container>
@@ -116,24 +116,24 @@ export default function ContactPage() {
               <Card hover={false}>
                 <CardContent className="p-8">
                   <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                    Request a Consultation
+                    Minta Konsultasi
                   </h2>
 
                   {isSubmitted ? (
                     <div className="text-center py-12">
                       <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                       <h3 className="font-heading text-2xl font-bold text-navy mb-2">
-                        Thank You!
+                        Terima Kasih!
                       </h3>
                       <p className="text-charcoal/70 mb-6">
-                        We have received your inquiry and will be in touch within
-                        one business day.
+                        Kami telah menerima pertanyaan Anda dan akan menghubungi Anda
+                        dalam satu hari kerja.
                       </p>
                       <Button
                         variant="secondary"
                         onClick={() => setIsSubmitted(false)}
                       >
-                        Submit Another Inquiry
+                        Kirim Pertanyaan Lain
                       </Button>
                     </div>
                   ) : (
@@ -141,15 +141,15 @@ export default function ContactPage() {
                       <div className="grid sm:grid-cols-2 gap-6">
                         <Input
                           id="firstName"
-                          label="First Name *"
-                          placeholder="John"
+                          label="Nama Depan *"
+                          placeholder="Budi"
                           {...register("firstName")}
                           error={errors.firstName?.message}
                         />
                         <Input
                           id="lastName"
-                          label="Last Name *"
-                          placeholder="Doe"
+                          label="Nama Belakang *"
+                          placeholder="Santoso"
                           {...register("lastName")}
                           error={errors.lastName?.message}
                         />
@@ -159,16 +159,16 @@ export default function ContactPage() {
                         <Input
                           id="email"
                           type="email"
-                          label="Email Address *"
-                          placeholder="john.doe@company.com"
+                          label="Alamat Email *"
+                          placeholder="budi.santoso@perusahaan.com"
                           {...register("email")}
                           error={errors.email?.message}
                         />
                         <Input
                           id="phone"
                           type="tel"
-                          label="Phone Number *"
-                          placeholder="(555) 123-4567"
+                          label="Nomor Telepon *"
+                          placeholder="0812-3456-7890"
                           {...register("phone")}
                           error={errors.phone?.message}
                         />
@@ -177,13 +177,13 @@ export default function ContactPage() {
                       <div className="grid sm:grid-cols-2 gap-6">
                         <Input
                           id="company"
-                          label="Company/Organization"
-                          placeholder="Acme Corporation"
+                          label="Perusahaan/Organisasi"
+                          placeholder="PT Maju Bersama"
                           {...register("company")}
                         />
                         <Select
                           id="practiceArea"
-                          label="Practice Area *"
+                          label="Bidang Layanan *"
                           options={practiceAreaOptions}
                           {...register("practiceArea")}
                           error={errors.practiceArea?.message}
@@ -192,19 +192,19 @@ export default function ContactPage() {
 
                       <Textarea
                         id="message"
-                        label="How can we help you? *"
-                        placeholder="Please describe your legal matter or inquiry..."
+                        label="Bagaimana kami dapat membantu Anda? *"
+                        placeholder="Mohon jelaskan permasalahan hukum atau pertanyaan Anda..."
                         rows={5}
                         {...register("message")}
                         error={errors.message?.message}
                       />
 
                       <p className="text-sm text-charcoal/60">
-                        By submitting this form, you agree to our{" "}
+                        Dengan mengirimkan formulir ini, Anda menyetujui{" "}
                         <a href="/privacy" className="text-gold hover:underline">
-                          Privacy Policy
+                          Kebijakan Privasi
                         </a>
-                        . All communications are confidential.
+                        . Semua komunikasi bersifat rahasia.
                       </p>
 
                       <Button
@@ -215,10 +215,10 @@ export default function ContactPage() {
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
-                          "Submitting..."
+                          "Mengirim..."
                         ) : (
                           <>
-                            Submit Inquiry
+                            Kirim Pertanyaan
                             <Send className="h-5 w-5 ml-2" />
                           </>
                         )}
@@ -235,7 +235,7 @@ export default function ContactPage() {
               <Card hover={false}>
                 <CardContent className="p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">
-                    Quick Contact
+                    Kontak Cepat
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -243,12 +243,12 @@ export default function ContactPage() {
                         <Phone className="h-5 w-5 text-gold" />
                       </div>
                       <div>
-                        <p className="text-sm text-charcoal/60">Main Line</p>
+                        <p className="text-sm text-charcoal/60">Telepon Utama</p>
                         <a
-                          href="tel:+15551234000"
+                          href="tel:+622112345678"
                           className="font-medium text-navy hover:text-gold transition-colors"
                         >
-                          (555) 123-4000
+                          (021) 1234-5678
                         </a>
                       </div>
                     </div>
@@ -259,10 +259,10 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-charcoal/60">Email</p>
                         <a
-                          href="mailto:info@advokata.com"
+                          href="mailto:info@advokata.co.id"
                           className="font-medium text-navy hover:text-gold transition-colors"
                         >
-                          info@advokata.com
+                          info@advokata.co.id
                         </a>
                       </div>
                     </div>
@@ -271,9 +271,9 @@ export default function ContactPage() {
                         <Clock className="h-5 w-5 text-gold" />
                       </div>
                       <div>
-                        <p className="text-sm text-charcoal/60">Office Hours</p>
+                        <p className="text-sm text-charcoal/60">Jam Kantor</p>
                         <p className="font-medium text-navy">
-                          Mon-Fri: 9:00 AM - 6:00 PM
+                          Sen-Jum: 09:00 - 18:00 WIB
                         </p>
                       </div>
                     </div>
@@ -285,7 +285,7 @@ export default function ContactPage() {
               <Card hover={false}>
                 <CardContent className="p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">
-                    Our Offices
+                    Kantor Kami
                   </h3>
                   <div className="space-y-6">
                     {offices.map((office) => (
@@ -332,18 +332,18 @@ export default function ContactPage() {
               {/* Emergency */}
               <div className="bg-navy rounded-lg p-6 text-white">
                 <h3 className="font-heading text-lg font-bold mb-2">
-                  Urgent Matters
+                  Urusan Mendesak
                 </h3>
                 <p className="text-white/80 text-sm mb-4">
-                  For time-sensitive legal matters, our attorneys are available
+                  Untuk masalah hukum yang sensitif waktu, pengacara kami tersedia
                   24/7.
                 </p>
                 <a
-                  href="tel:+15551234999"
+                  href="tel:+622112349999"
                   className="inline-flex items-center text-gold font-medium hover:text-gold-light transition-colors"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  (555) 123-4999
+                  (021) 1234-9999
                 </a>
               </div>
             </div>
@@ -356,7 +356,7 @@ export default function ContactPage() {
         <div className="text-center">
           <MapPin className="h-12 w-12 text-navy/30 mx-auto mb-4" />
           <p className="text-charcoal/50">
-            Interactive map would be displayed here
+            Peta interaktif akan ditampilkan di sini
           </p>
         </div>
       </section>

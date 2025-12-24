@@ -15,9 +15,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Practice Areas",
+  title: "Layanan Hukum",
   description:
-    "Explore our comprehensive legal services across corporate law, M&A, real estate, IP, litigation, and banking & finance.",
+    "Jelajahi layanan hukum komprehensif kami di bidang hukum korporasi, M&A, real estat, KI, litigasi, dan perbankan & keuangan.",
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -37,12 +37,12 @@ export default function PracticeAreasPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-              Practice Areas
+              Layanan Hukum
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Our attorneys bring decades of experience across a comprehensive
-              range of practice areas. We deliver sophisticated legal solutions
-              tailored to meet the unique needs of each client.
+              Pengacara kami membawa pengalaman puluhan tahun di berbagai bidang
+              praktik yang komprehensif. Kami memberikan solusi hukum canggih
+              yang disesuaikan untuk memenuhi kebutuhan unik setiap klien.
             </p>
           </div>
         </Container>
@@ -84,7 +84,7 @@ export default function PracticeAreasPage() {
                             ))}
                           </ul>
                           <div className="flex items-center text-gold font-medium group-hover:gap-2 transition-all">
-                            Learn More
+                            Selengkapnya
                             <ArrowRight className="h-4 w-4 ml-1" />
                           </div>
                         </div>
@@ -103,17 +103,17 @@ export default function PracticeAreasPage() {
         <Container>
           <div className="text-center">
             <h2 className="font-heading text-2xl font-bold text-navy mb-4">
-              Need Legal Assistance?
+              Butuh Bantuan Hukum?
             </h2>
             <p className="text-charcoal/70 mb-6 max-w-2xl mx-auto">
-              Our attorneys are ready to discuss how we can help with your
-              specific legal needs. Contact us for a confidential consultation.
+              Pengacara kami siap mendiskusikan bagaimana kami dapat membantu
+              kebutuhan hukum spesifik Anda. Hubungi kami untuk konsultasi rahasia.
             </p>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-gold text-white px-8 py-3 font-medium hover:bg-gold-dark transition-colors"
             >
-              Schedule Consultation
+              Jadwalkan Konsultasi
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>

@@ -7,9 +7,9 @@ import { attorneys } from "@/data/attorneys";
 import { Mail, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Attorneys",
+  title: "Tim Pengacara",
   description:
-    "Meet the experienced attorneys at Advokata Partners who deliver exceptional results for clients across practice areas.",
+    "Temui para pengacara berpengalaman di Advokata Partners yang memberikan hasil luar biasa bagi klien di berbagai bidang praktik.",
 };
 
 export default function AttorneysPage() {
@@ -20,13 +20,12 @@ export default function AttorneysPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-              Our Attorneys
+              Tim Pengacara Kami
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Our attorneys bring diverse backgrounds and deep expertise to every
-              matter. Each member of our team is committed to delivering
-              exceptional service and achieving the best possible outcomes for
-              our clients.
+              Pengacara kami membawa latar belakang beragam dan keahlian mendalam
+              ke setiap perkara. Setiap anggota tim kami berkomitmen untuk memberikan
+              layanan luar biasa dan mencapai hasil terbaik bagi klien kami.
             </p>
           </div>
         </Container>

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const area = getPracticeAreaBySlug(slug);
 
   if (!area) {
-    return { title: "Practice Area Not Found" };
+    return { title: "Layanan Tidak Ditemukan" };
   }
 
   return {
@@ -61,7 +61,7 @@ export default async function PracticeAreaPage({ params }: PageProps) {
             className="inline-flex items-center text-white/70 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            All Practice Areas
+            Semua Layanan Hukum
           </Link>
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
             {area.title}
@@ -87,7 +87,7 @@ export default async function PracticeAreaPage({ params }: PageProps) {
               {/* Key Services */}
               <div className="mt-12">
                 <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                  Our Services
+                  Layanan Kami
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {area.keyServices.map((service) => (
@@ -106,7 +106,7 @@ export default async function PracticeAreaPage({ params }: PageProps) {
               {attorneys.length > 0 && (
                 <div className="mt-12">
                   <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                    Attorneys in {area.title}
+                    Pengacara di Bidang {area.title}
                   </h2>
                   <div className="grid sm:grid-cols-2 gap-6">
                     {attorneys.map((attorney) => (
@@ -149,35 +149,34 @@ export default async function PracticeAreaPage({ params }: PageProps) {
               <Card hover={false}>
                 <CardContent className="p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">
-                    Speak with an Attorney
+                    Bicara dengan Pengacara
                   </h3>
                   <p className="text-charcoal/70 text-sm mb-6">
-                    Contact us to discuss how our {area.title} team can assist
-                    with your legal needs.
+                    Hubungi kami untuk mendiskusikan bagaimana tim {area.title} kami dapat membantu kebutuhan hukum Anda.
                   </p>
                   <div className="space-y-4">
                     <Button variant="gold" className="w-full" asChild>
                       <Link href="/contact">
-                        Request Consultation
+                        Minta Konsultasi
                         <ArrowRight className="h-4 w-4 ml-2" />
                       </Link>
                     </Button>
                     <div className="flex items-center gap-2 text-sm text-charcoal/70">
                       <Phone className="h-4 w-4" />
                       <a
-                        href="tel:+15551234000"
+                        href="tel:+622112345678"
                         className="hover:text-gold transition-colors"
                       >
-                        (555) 123-4000
+                        (021) 1234-5678
                       </a>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-charcoal/70">
                       <Mail className="h-4 w-4" />
                       <a
-                        href="mailto:info@advokata.com"
+                        href="mailto:info@advokata.co.id"
                         className="hover:text-gold transition-colors"
                       >
-                        info@advokata.com
+                        info@advokata.co.id
                       </a>
                     </div>
                   </div>
@@ -189,7 +188,7 @@ export default async function PracticeAreaPage({ params }: PageProps) {
                 <Card hover={false}>
                   <CardContent className="p-6">
                     <h3 className="font-heading text-xl font-bold text-navy mb-4">
-                      Related Practice Areas
+                      Layanan Terkait
                     </h3>
                     <ul className="space-y-3">
                       {relatedAreas.map((related) => (

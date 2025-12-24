@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const attorney = getAttorneyBySlug(slug);
 
   if (!attorney) {
-    return { title: "Attorney Not Found" };
+    return { title: "Pengacara Tidak Ditemukan" };
   }
 
   return {
@@ -61,7 +61,7 @@ export default async function AttorneyPage({ params }: PageProps) {
             className="inline-flex items-center text-white/70 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            All Attorneys
+            Semua Pengacara
           </Link>
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             {/* Photo */}
@@ -104,7 +104,7 @@ export default async function AttorneyPage({ params }: PageProps) {
                 </a>
                 <span className="flex items-center gap-2 text-white/80">
                   <MapPin className="h-5 w-5" />
-                  New York
+                  Jakarta
                 </span>
               </div>
 
@@ -132,7 +132,7 @@ export default async function AttorneyPage({ params }: PageProps) {
               {/* Biography */}
               <div>
                 <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                  Biography
+                  Biografi
                 </h2>
                 <p className="text-charcoal/80 leading-relaxed text-lg">
                   {attorney.bio}
@@ -144,7 +144,7 @@ export default async function AttorneyPage({ params }: PageProps) {
                 <div>
                   <h2 className="font-heading text-2xl font-bold text-navy mb-6 flex items-center gap-3">
                     <Award className="h-6 w-6 text-gold" />
-                    Notable Achievements
+                    Pencapaian Penting
                   </h2>
                   <ul className="space-y-3">
                     {attorney.achievements.map((achievement, index) => (
@@ -164,7 +164,7 @@ export default async function AttorneyPage({ params }: PageProps) {
               {attorneyInsights.length > 0 && (
                 <div>
                   <h2 className="font-heading text-2xl font-bold text-navy mb-6">
-                    Publications & Insights
+                    Publikasi & Artikel
                   </h2>
                   <div className="space-y-4">
                     {attorneyInsights.map((insight) => (
@@ -177,9 +177,9 @@ export default async function AttorneyPage({ params }: PageProps) {
                             {insight.title}
                           </h3>
                           <p className="text-sm text-charcoal/60 mt-1">
-                            {new Date(insight.date).toLocaleDateString("en-US", {
-                              month: "long",
+                            {new Date(insight.date).toLocaleDateString("id-ID", {
                               day: "numeric",
+                              month: "long",
                               year: "numeric",
                             })}
                           </p>
@@ -197,19 +197,19 @@ export default async function AttorneyPage({ params }: PageProps) {
               <Card hover={false}>
                 <CardContent className="p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">
-                    Contact {attorney.name.split(" ")[0]}
+                    Hubungi {attorney.name.split(" ")[0]}
                   </h3>
                   <div className="space-y-4">
                     <Button variant="gold" className="w-full" asChild>
                       <a href={`mailto:${attorney.email}`}>
                         <Mail className="h-4 w-4 mr-2" />
-                        Send Email
+                        Kirim Email
                       </a>
                     </Button>
                     <Button variant="secondary" className="w-full" asChild>
                       <a href={`tel:${attorney.phone}`}>
                         <Phone className="h-4 w-4 mr-2" />
-                        Call Now
+                        Telepon Sekarang
                       </a>
                     </Button>
                   </div>
@@ -221,7 +221,7 @@ export default async function AttorneyPage({ params }: PageProps) {
                 <CardContent className="p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4 flex items-center gap-2">
                     <GraduationCap className="h-5 w-5 text-gold" />
-                    Education
+                    Pendidikan
                   </h3>
                   <ul className="space-y-3">
                     {attorney.education.map((edu, index) => (
@@ -238,7 +238,7 @@ export default async function AttorneyPage({ params }: PageProps) {
                 <CardContent className="p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4 flex items-center gap-2">
                     <Scale className="h-5 w-5 text-gold" />
-                    Bar Admissions
+                    Lisensi Advokat
                   </h3>
                   <ul className="space-y-2">
                     {attorney.barAdmissions.map((bar, index) => (

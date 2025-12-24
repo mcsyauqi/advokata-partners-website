@@ -5,29 +5,31 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Advokata Partners | Excellence in Legal Counsel",
+    default: "Advokata Partners | Keunggulan dalam Layanan Hukum",
     template: "%s | Advokata Partners",
   },
   description:
-    "Advokata Partners is a leading corporate and commercial law firm providing exceptional legal counsel since 1995. Protecting your interests. Building your future.",
+    "Advokata Partners adalah firma hukum korporasi dan komersial terkemuka yang menyediakan layanan hukum luar biasa sejak 1995. Melindungi kepentingan Anda. Membangun masa depan Anda.",
   keywords: [
-    "law firm",
-    "corporate law",
-    "mergers and acquisitions",
-    "legal counsel",
-    "business law",
-    "litigation",
-    "intellectual property",
-    "real estate law",
+    "firma hukum",
+    "hukum korporasi",
+    "merger dan akuisisi",
+    "konsultan hukum",
+    "hukum bisnis",
+    "litigasi",
+    "kekayaan intelektual",
+    "hukum properti",
+    "pengacara Jakarta",
+    "law firm Indonesia",
   ],
   authors: [{ name: "Advokata Partners" }],
   openGraph: {
-    title: "Advokata Partners | Excellence in Legal Counsel",
+    title: "Advokata Partners | Keunggulan dalam Layanan Hukum",
     description:
-      "A leading corporate and commercial law firm providing exceptional legal counsel since 1995.",
-    url: "https://advokata-partners.com",
+      "Firma hukum korporasi dan komersial terkemuka yang menyediakan layanan hukum luar biasa sejak 1995.",
+    url: "https://advokata.co.id",
     siteName: "Advokata Partners",
-    locale: "en_US",
+    locale: "id_ID",
     type: "website",
   },
 };
@@ -38,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

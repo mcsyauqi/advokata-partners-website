@@ -20,47 +20,47 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const practiceAreas = [
+const layananHukum = [
   {
-    title: "Corporate Law",
+    title: "Hukum Korporasi",
     slug: "corporate-law",
     description:
-      "Comprehensive counsel for businesses from formation through all stages of growth.",
+      "Pendampingan hukum komprehensif untuk bisnis dari pendirian hingga seluruh tahap pertumbuhan.",
     icon: Building2,
   },
   {
-    title: "Mergers & Acquisitions",
+    title: "Merger & Akuisisi",
     slug: "mergers-acquisitions",
     description:
-      "Strategic guidance through complex M&A transactions, from deal inception to closing.",
+      "Panduan strategis untuk transaksi M&A yang kompleks, dari awal hingga penutupan deal.",
     icon: ArrowRightLeft,
   },
   {
-    title: "Real Estate",
+    title: "Properti & Real Estat",
     slug: "real-estate",
     description:
-      "Full-service real estate solutions for acquisitions, development, and financing.",
+      "Solusi real estat lengkap untuk akuisisi, pengembangan, dan pembiayaan properti.",
     icon: Home,
   },
   {
-    title: "Intellectual Property",
+    title: "Kekayaan Intelektual",
     slug: "intellectual-property",
     description:
-      "Protection and enforcement of patents, trademarks, copyrights, and trade secrets.",
+      "Perlindungan dan penegakan paten, merek dagang, hak cipta, dan rahasia dagang.",
     icon: Lightbulb,
   },
   {
-    title: "Litigation",
+    title: "Litigasi",
     slug: "litigation",
     description:
-      "Skilled trial advocacy and dispute resolution for complex commercial matters.",
+      "Advokasi persidangan ahli dan penyelesaian sengketa untuk perkara komersial kompleks.",
     icon: Gavel,
   },
   {
-    title: "Banking & Finance",
+    title: "Perbankan & Keuangan",
     slug: "banking-finance",
     description:
-      "Sophisticated financing solutions for lenders, borrowers, and institutions.",
+      "Solusi pembiayaan canggih untuk pemberi pinjaman, peminjam, dan institusi keuangan.",
     icon: Landmark,
   },
 ];
@@ -71,13 +71,13 @@ export function PracticeAreasSection() {
       <Container>
         <AnimatedSection>
           <SectionHeading
-            title="Our Practice Areas"
-            subtitle="We provide comprehensive legal services across a wide range of practice areas, delivering tailored solutions for complex challenges."
+            title="Layanan Hukum Kami"
+            subtitle="Kami menyediakan layanan hukum komprehensif di berbagai bidang praktik, memberikan solusi yang disesuaikan untuk tantangan yang kompleks."
           />
         </AnimatedSection>
 
         <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-          {practiceAreas.map((area) => (
+          {layananHukum.map((area) => (
             <StaggerItem key={area.slug}>
               <Link href={`/practice-areas/${area.slug}`}>
                 <Card className="h-full group cursor-pointer">
@@ -92,7 +92,7 @@ export function PracticeAreasSection() {
                       {area.description}
                     </p>
                     <div className="flex items-center text-gold text-sm font-medium group-hover:gap-2 transition-all">
-                      Learn More
+                      Selengkapnya
                       <ArrowRight className="h-4 w-4 ml-1" />
                     </div>
                   </CardContent>
@@ -104,7 +104,7 @@ export function PracticeAreasSection() {
 
         <AnimatedSection delay={0.4} className="text-center mt-12">
           <Button variant="secondary" size="lg" asChild>
-            <Link href="/practice-areas">View All Practice Areas</Link>
+            <Link href="/practice-areas">Lihat Semua Layanan</Link>
           </Button>
         </AnimatedSection>
       </Container>

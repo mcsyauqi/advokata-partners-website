@@ -22,8 +22,8 @@ export function InsightsPreview() {
       <Container>
         <AnimatedSection>
           <SectionHeading
-            title="Legal Insights"
-            subtitle="Stay informed with the latest legal developments, industry analysis, and expert commentary from our attorneys."
+            title="Artikel Hukum"
+            subtitle="Tetap terinformasi dengan perkembangan hukum terbaru, analisis industri, dan komentar ahli dari pengacara kami."
           />
         </AnimatedSection>
 
@@ -53,9 +53,9 @@ export function InsightsPreview() {
                     <div className="flex items-center gap-4 text-sm text-charcoal/50 mb-3">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
-                        {new Date(insight.date).toLocaleDateString("en-US", {
-                          month: "short",
+                        {new Date(insight.date).toLocaleDateString("id-ID", {
                           day: "numeric",
+                          month: "short",
                           year: "numeric",
                         })}
                       </span>
@@ -87,7 +87,7 @@ export function InsightsPreview() {
         <AnimatedSection delay={0.4} className="text-center mt-12">
           <Button variant="secondary" size="lg" asChild>
             <Link href="/insights" className="flex items-center gap-2">
-              View All Insights
+              Lihat Semua Artikel
               <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>

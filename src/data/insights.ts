@@ -4,180 +4,180 @@ export const insights: Insight[] = [
   {
     id: "1",
     slug: "navigating-cross-border-ma-2024",
-    title: "Navigating Cross-Border M&A in 2024: Key Considerations",
+    title: "Navigasi M&A Lintas Batas di 2024: Pertimbangan Kunci",
     excerpt:
-      "As global markets continue to evolve, cross-border M&A transactions present unique challenges and opportunities. This article examines critical factors for successful international deals.",
+      "Seiring pasar global terus berkembang, transaksi M&A lintas batas menghadirkan tantangan dan peluang unik. Artikel ini membahas faktor-faktor kritis untuk deal internasional yang sukses.",
     content: `
-      <p>Cross-border mergers and acquisitions have become increasingly complex in today's global business environment. Companies looking to expand internationally must navigate a maze of regulatory requirements, cultural differences, and market-specific challenges.</p>
+      <p>Merger dan akuisisi lintas batas telah menjadi semakin kompleks dalam lingkungan bisnis global saat ini. Perusahaan yang ingin berekspansi secara internasional harus menavigasi labirin persyaratan regulasi, perbedaan budaya, dan tantangan spesifik pasar.</p>
 
-      <h2>Regulatory Landscape</h2>
-      <p>The regulatory environment for cross-border M&A has grown more stringent in recent years. Many jurisdictions have expanded their foreign investment review regimes, particularly in sectors deemed critical to national security. Acquirers must now consider not only antitrust implications but also national security reviews, data protection requirements, and industry-specific regulations.</p>
+      <h2>Lanskap Regulasi</h2>
+      <p>Lingkungan regulasi untuk M&A lintas batas telah menjadi lebih ketat dalam beberapa tahun terakhir. Banyak yurisdiksi telah memperluas rezim peninjauan investasi asing mereka, terutama di sektor yang dianggap kritis bagi keamanan nasional. Pengakuisisi kini harus mempertimbangkan tidak hanya implikasi antimonopoli tetapi juga tinjauan keamanan nasional, persyaratan perlindungan data, dan regulasi khusus industri.</p>
 
-      <h2>Due Diligence Considerations</h2>
-      <p>Effective due diligence in cross-border transactions requires a deep understanding of local laws, customs, and business practices. Key areas of focus should include:</p>
+      <h2>Pertimbangan Due Diligence</h2>
+      <p>Due diligence yang efektif dalam transaksi lintas batas membutuhkan pemahaman mendalam tentang hukum lokal, adat istiadat, dan praktik bisnis. Area fokus utama meliputi:</p>
       <ul>
-        <li>Local employment laws and labor practices</li>
-        <li>Environmental regulations and liabilities</li>
-        <li>Tax structures and transfer pricing implications</li>
-        <li>Intellectual property protection in the target jurisdiction</li>
-        <li>Data privacy compliance requirements</li>
+        <li>Undang-undang ketenagakerjaan dan praktik kerja lokal</li>
+        <li>Regulasi lingkungan dan kewajiban</li>
+        <li>Struktur pajak dan implikasi transfer pricing</li>
+        <li>Perlindungan kekayaan intelektual di yurisdiksi target</li>
+        <li>Persyaratan kepatuhan privasi data</li>
       </ul>
 
-      <h2>Conclusion</h2>
-      <p>Success in cross-border M&A requires careful planning, local expertise, and a flexible approach to deal structuring. By anticipating challenges and engaging experienced advisors early in the process, companies can navigate these complex transactions effectively.</p>
+      <h2>Kesimpulan</h2>
+      <p>Sukses dalam M&A lintas batas membutuhkan perencanaan matang, keahlian lokal, dan pendekatan fleksibel dalam strukturisasi deal. Dengan mengantisipasi tantangan dan melibatkan penasihat berpengalaman sejak awal proses, perusahaan dapat menavigasi transaksi kompleks ini secara efektif.</p>
     `,
-    author: "Alexander Petrov",
+    author: "Alexander Widodo",
     authorSlug: "alexander-petrov",
     date: "2024-01-15",
-    category: "Mergers & Acquisitions",
+    category: "Merger & Akuisisi",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
-    readTime: "8 min read",
+    readTime: "8 menit baca",
   },
   {
     id: "2",
     slug: "ai-intellectual-property-challenges",
-    title: "AI and Intellectual Property: Emerging Legal Challenges",
+    title: "AI dan Kekayaan Intelektual: Tantangan Hukum yang Muncul",
     excerpt:
-      "Artificial intelligence is transforming industries and creating novel legal questions around ownership, protection, and liability of AI-generated innovations.",
+      "Kecerdasan buatan mentransformasi industri dan menciptakan pertanyaan hukum baru seputar kepemilikan, perlindungan, dan tanggung jawab inovasi yang dihasilkan AI.",
     content: `
-      <p>The rapid advancement of artificial intelligence technology is outpacing the development of legal frameworks designed to protect intellectual property. As AI systems become capable of generating creative works, inventions, and innovations, fundamental questions arise about ownership and protection.</p>
+      <p>Kemajuan pesat teknologi kecerdasan buatan melampaui perkembangan kerangka hukum yang dirancang untuk melindungi kekayaan intelektual. Saat sistem AI menjadi mampu menghasilkan karya kreatif, penemuan, dan inovasi, muncul pertanyaan fundamental tentang kepemilikan dan perlindungan.</p>
 
-      <h2>Patentability of AI Inventions</h2>
-      <p>One of the most pressing questions in IP law is whether AI-generated inventions can be patented and, if so, who should be named as the inventor. Recent court decisions have generally held that only natural persons can be inventors under current patent law, but this interpretation may need to evolve as AI becomes more sophisticated.</p>
+      <h2>Paten untuk Penemuan AI</h2>
+      <p>Salah satu pertanyaan paling mendesak dalam hukum KI adalah apakah penemuan yang dihasilkan AI dapat dipatenkan dan, jika demikian, siapa yang harus disebut sebagai penemu. Putusan pengadilan baru-baru ini umumnya menyatakan bahwa hanya orang alamiah yang dapat menjadi penemu berdasarkan hukum paten saat ini, tetapi interpretasi ini mungkin perlu berkembang seiring AI menjadi lebih canggih.</p>
 
-      <h2>Copyright Considerations</h2>
-      <p>Similar questions arise in the copyright context. Works created by AI without significant human intervention may not qualify for copyright protection, leaving AI-generated content in the public domain. Companies must carefully structure their AI development processes to maintain ownership of outputs.</p>
+      <h2>Pertimbangan Hak Cipta</h2>
+      <p>Pertanyaan serupa muncul dalam konteks hak cipta. Karya yang dibuat oleh AI tanpa keterlibatan manusia yang signifikan mungkin tidak memenuhi syarat untuk perlindungan hak cipta, meninggalkan konten yang dihasilkan AI di domain publik. Perusahaan harus hati-hati menyusun proses pengembangan AI mereka untuk mempertahankan kepemilikan output.</p>
 
-      <h2>Practical Recommendations</h2>
-      <p>Organizations using AI in their innovation processes should:</p>
+      <h2>Rekomendasi Praktis</h2>
+      <p>Organisasi yang menggunakan AI dalam proses inovasi mereka harus:</p>
       <ul>
-        <li>Document human involvement in AI-assisted inventions</li>
-        <li>Implement clear policies on AI-generated IP ownership</li>
-        <li>Consider trade secret protection for AI algorithms</li>
-        <li>Stay informed about evolving legal standards</li>
+        <li>Mendokumentasikan keterlibatan manusia dalam penemuan berbantuan AI</li>
+        <li>Menerapkan kebijakan yang jelas tentang kepemilikan KI yang dihasilkan AI</li>
+        <li>Mempertimbangkan perlindungan rahasia dagang untuk algoritma AI</li>
+        <li>Tetap terinformasi tentang standar hukum yang berkembang</li>
       </ul>
     `,
-    author: "Marcus Wellington",
+    author: "Marcus Santoso",
     authorSlug: "marcus-wellington",
     date: "2024-02-20",
-    category: "Intellectual Property",
+    category: "Kekayaan Intelektual",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
-    readTime: "6 min read",
+    readTime: "6 menit baca",
   },
   {
     id: "3",
     slug: "commercial-real-estate-trends-2024",
-    title: "Commercial Real Estate Market Trends and Legal Implications",
+    title: "Tren Pasar Real Estat Komersial dan Implikasi Hukum",
     excerpt:
-      "The commercial real estate landscape is shifting dramatically. Understanding these changes is crucial for investors, developers, and legal practitioners alike.",
+      "Lanskap real estat komersial berubah secara dramatis. Memahami perubahan ini sangat penting bagi investor, pengembang, dan praktisi hukum.",
     content: `
-      <p>The commercial real estate market is undergoing significant transformation, driven by changing work patterns, technological advances, and evolving tenant expectations. These shifts have important legal implications for all market participants.</p>
+      <p>Pasar real estat komersial sedang mengalami transformasi signifikan, didorong oleh perubahan pola kerja, kemajuan teknologi, dan ekspektasi penyewa yang berkembang. Pergeseran ini memiliki implikasi hukum penting bagi semua pelaku pasar.</p>
 
-      <h2>Office Market Evolution</h2>
-      <p>The widespread adoption of hybrid work arrangements has fundamentally changed demand for office space. Lease negotiations now focus heavily on flexibility provisions, and landlords are investing in amenities to attract tenants. Legal practitioners should be prepared to draft innovative lease structures that accommodate these new realities.</p>
+      <h2>Evolusi Pasar Perkantoran</h2>
+      <p>Adopsi luas pengaturan kerja hybrid telah secara fundamental mengubah permintaan untuk ruang kantor. Negosiasi sewa kini sangat fokus pada ketentuan fleksibilitas, dan pemilik properti berinvestasi dalam fasilitas untuk menarik penyewa. Praktisi hukum harus siap menyusun struktur sewa inovatif yang mengakomodasi realitas baru ini.</p>
 
-      <h2>Industrial and Logistics Growth</h2>
-      <p>E-commerce growth continues to drive demand for warehouse and distribution facilities. This sector presents opportunities but also legal challenges related to environmental compliance, zoning restrictions, and construction timelines.</p>
+      <h2>Pertumbuhan Industri dan Logistik</h2>
+      <p>Pertumbuhan e-commerce terus mendorong permintaan untuk fasilitas gudang dan distribusi. Sektor ini menghadirkan peluang tetapi juga tantangan hukum terkait kepatuhan lingkungan, pembatasan zonasi, dan timeline konstruksi.</p>
 
-      <h2>ESG Considerations</h2>
-      <p>Environmental, social, and governance factors are increasingly influencing real estate investment decisions. Green building certifications, energy efficiency requirements, and sustainability reporting are becoming standard expectations. Legal documentation must address these considerations comprehensively.</p>
+      <h2>Pertimbangan ESG</h2>
+      <p>Faktor lingkungan, sosial, dan tata kelola semakin mempengaruhi keputusan investasi real estat. Sertifikasi bangunan hijau, persyaratan efisiensi energi, dan pelaporan keberlanjutan menjadi ekspektasi standar. Dokumentasi hukum harus menangani pertimbangan ini secara komprehensif.</p>
     `,
-    author: "Victoria Chambers",
+    author: "Victoria Kusuma",
     authorSlug: "victoria-chambers",
     date: "2024-03-05",
-    category: "Real Estate",
+    category: "Properti & Real Estat",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop",
-    readTime: "7 min read",
+    readTime: "7 menit baca",
   },
   {
     id: "4",
     slug: "international-arbitration-enforcement",
-    title: "Enforcement of International Arbitration Awards: A Practical Guide",
+    title: "Penegakan Putusan Arbitrase Internasional: Panduan Praktis",
     excerpt:
-      "Winning an arbitration award is only half the battle. This guide examines strategies for effective enforcement across jurisdictions.",
+      "Memenangkan putusan arbitrase hanyalah setengah pertempuran. Panduan ini membahas strategi untuk penegakan efektif di berbagai yurisdiksi.",
     content: `
-      <p>International arbitration has become the preferred method for resolving cross-border commercial disputes. However, the true value of an arbitration award lies in its enforceability. This article provides practical guidance on enforcing awards under the New York Convention and beyond.</p>
+      <p>Arbitrase internasional telah menjadi metode pilihan untuk menyelesaikan sengketa komersial lintas batas. Namun, nilai sebenarnya dari putusan arbitrase terletak pada keberlakuannya. Artikel ini memberikan panduan praktis tentang penegakan putusan berdasarkan Konvensi New York dan seterusnya.</p>
 
-      <h2>The New York Convention Framework</h2>
-      <p>The Convention on the Recognition and Enforcement of Foreign Arbitral Awards provides a robust framework for enforcement in over 160 countries. However, the grounds for refusing enforcement, while narrow, require careful navigation.</p>
+      <h2>Kerangka Konvensi New York</h2>
+      <p>Konvensi tentang Pengakuan dan Penegakan Putusan Arbitrase Asing menyediakan kerangka yang kuat untuk penegakan di lebih dari 160 negara. Namun, dasar-dasar untuk menolak penegakan, meskipun sempit, memerlukan navigasi yang hati-hati.</p>
 
-      <h2>Pre-Award Considerations</h2>
-      <p>Enforcement strategy should begin before the award is issued. Key considerations include:</p>
+      <h2>Pertimbangan Sebelum Putusan</h2>
+      <p>Strategi penegakan harus dimulai sebelum putusan dikeluarkan. Pertimbangan kunci meliputi:</p>
       <ul>
-        <li>Asset identification and preservation</li>
-        <li>Selection of arbitral institution and seat</li>
-        <li>Ensuring proper procedural compliance</li>
-        <li>Anticipating potential enforcement challenges</li>
+        <li>Identifikasi dan preservasi aset</li>
+        <li>Pemilihan institusi arbitrase dan tempat kedudukan</li>
+        <li>Memastikan kepatuhan prosedural yang tepat</li>
+        <li>Mengantisipasi tantangan penegakan potensial</li>
       </ul>
 
-      <h2>Overcoming Enforcement Obstacles</h2>
-      <p>Award debtors may attempt to resist enforcement on various grounds. Successful enforcement requires understanding local court procedures and attitudes toward arbitration, as well as creative strategies for asset recovery.</p>
+      <h2>Mengatasi Hambatan Penegakan</h2>
+      <p>Debitur putusan mungkin mencoba menolak penegakan dengan berbagai alasan. Penegakan yang sukses membutuhkan pemahaman prosedur pengadilan lokal dan sikap terhadap arbitrase, serta strategi kreatif untuk pemulihan aset.</p>
     `,
-    author: "Elena Rodriguez",
+    author: "Elena Wijaya",
     authorSlug: "elena-rodriguez",
     date: "2024-03-18",
-    category: "Litigation",
+    category: "Litigasi",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=500&fit=crop",
-    readTime: "9 min read",
+    readTime: "9 menit baca",
   },
   {
     id: "5",
     slug: "private-credit-market-outlook",
-    title: "Private Credit Market: Opportunities and Legal Considerations",
+    title: "Pasar Kredit Privat: Peluang dan Pertimbangan Hukum",
     excerpt:
-      "Private credit has emerged as a major asset class. Understanding the legal frameworks and documentation standards is essential for participants.",
+      "Kredit privat telah muncul sebagai kelas aset utama. Memahami kerangka hukum dan standar dokumentasi sangat penting bagi peserta.",
     content: `
-      <p>The private credit market has experienced explosive growth, with assets under management reaching record levels. As traditional banks retreat from certain lending activities, private credit funds have stepped in to fill the gap, creating both opportunities and challenges for borrowers and lenders.</p>
+      <p>Pasar kredit privat telah mengalami pertumbuhan eksplosif, dengan aset yang dikelola mencapai rekor tertinggi. Saat bank tradisional mundur dari aktivitas pinjaman tertentu, dana kredit privat telah masuk untuk mengisi celah tersebut, menciptakan peluang dan tantangan bagi peminjam dan pemberi pinjaman.</p>
 
-      <h2>Market Dynamics</h2>
-      <p>Private credit encompasses a range of strategies, from direct lending to distressed debt to specialty finance. Each strategy carries unique risk and return profiles and requires tailored legal documentation.</p>
+      <h2>Dinamika Pasar</h2>
+      <p>Kredit privat mencakup berbagai strategi, dari pinjaman langsung hingga utang bermasalah hingga keuangan khusus. Setiap strategi membawa profil risiko dan pengembalian unik dan memerlukan dokumentasi hukum yang disesuaikan.</p>
 
-      <h2>Documentation Considerations</h2>
-      <p>While private credit documentation has become more standardized, significant variations exist across deal types and sponsors. Key negotiation points include:</p>
+      <h2>Pertimbangan Dokumentasi</h2>
+      <p>Meskipun dokumentasi kredit privat telah menjadi lebih terstandarisasi, variasi signifikan ada di berbagai jenis deal dan sponsor. Poin negosiasi kunci meliputi:</p>
       <ul>
-        <li>Financial covenant packages</li>
-        <li>EBITDA adjustment definitions</li>
-        <li>Permitted investments and restricted payments</li>
-        <li>Call protection and prepayment provisions</li>
+        <li>Paket covenant keuangan</li>
+        <li>Definisi penyesuaian EBITDA</li>
+        <li>Investasi yang diizinkan dan pembayaran terbatas</li>
+        <li>Perlindungan call dan ketentuan pelunasan awal</li>
       </ul>
 
-      <h2>Regulatory Environment</h2>
-      <p>Private credit funds face an evolving regulatory landscape. Recent regulatory proposals could significantly impact fund structures, disclosure requirements, and investor protection standards.</p>
+      <h2>Lingkungan Regulasi</h2>
+      <p>Dana kredit privat menghadapi lanskap regulasi yang berkembang. Proposal regulasi baru-baru ini dapat secara signifikan mempengaruhi struktur dana, persyaratan pengungkapan, dan standar perlindungan investor.</p>
     `,
-    author: "Jonathan Sterling",
+    author: "Jonathan Hartono",
     authorSlug: "jonathan-sterling",
     date: "2024-04-02",
-    category: "Banking & Finance",
+    category: "Perbankan & Keuangan",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=500&fit=crop",
-    readTime: "7 min read",
+    readTime: "7 menit baca",
   },
   {
     id: "6",
     slug: "securities-regulation-updates",
-    title: "SEC Regulatory Updates: What Public Companies Need to Know",
+    title: "Pembaruan Regulasi OJK: Yang Perlu Diketahui Perusahaan Publik",
     excerpt:
-      "Recent SEC rulemaking has significant implications for public company disclosure, governance, and compliance. This overview highlights key developments.",
+      "Pembuatan aturan OJK baru-baru ini memiliki implikasi signifikan untuk pengungkapan, tata kelola, dan kepatuhan perusahaan publik. Tinjauan ini menyoroti perkembangan kunci.",
     content: `
-      <p>The Securities and Exchange Commission has been active in updating disclosure requirements and governance standards for public companies. This article summarizes recent developments and their practical implications.</p>
+      <p>Otoritas Jasa Keuangan telah aktif memperbarui persyaratan pengungkapan dan standar tata kelola untuk perusahaan publik. Artikel ini merangkum perkembangan terbaru dan implikasi praktisnya.</p>
 
-      <h2>Climate Disclosure Requirements</h2>
-      <p>The SEC's new climate disclosure rules represent the most significant expansion of public company reporting requirements in decades. Companies must assess their exposure to climate-related risks and develop robust disclosure processes.</p>
+      <h2>Persyaratan Pengungkapan Iklim</h2>
+      <p>Aturan pengungkapan iklim baru OJK mewakili ekspansi paling signifikan dari persyaratan pelaporan perusahaan publik dalam beberapa dekade. Perusahaan harus menilai paparan mereka terhadap risiko terkait iklim dan mengembangkan proses pengungkapan yang kuat.</p>
 
-      <h2>Cybersecurity Incident Reporting</h2>
-      <p>New rules require rapid disclosure of material cybersecurity incidents. Companies must establish protocols for evaluating incident materiality and coordinating disclosure with incident response efforts.</p>
+      <h2>Pelaporan Insiden Keamanan Siber</h2>
+      <p>Aturan baru mewajibkan pengungkapan cepat insiden keamanan siber yang material. Perusahaan harus menetapkan protokol untuk mengevaluasi materialitas insiden dan mengoordinasikan pengungkapan dengan upaya respons insiden.</p>
 
-      <h2>Board Diversity Disclosure</h2>
-      <p>Enhanced disclosure requirements regarding board diversity require companies to provide detailed information about director demographics and diversity policies.</p>
+      <h2>Pengungkapan Keberagaman Dewan</h2>
+      <p>Persyaratan pengungkapan yang ditingkatkan mengenai keberagaman dewan mewajibkan perusahaan untuk memberikan informasi terperinci tentang demografi direktur dan kebijakan keberagaman.</p>
 
-      <h2>Practical Recommendations</h2>
-      <p>Companies should review their disclosure controls and procedures in light of these new requirements, engage with cross-functional teams to ensure comprehensive compliance, and consider the strategic implications of enhanced transparency.</p>
+      <h2>Rekomendasi Praktis</h2>
+      <p>Perusahaan harus meninjau kontrol dan prosedur pengungkapan mereka mengingat persyaratan baru ini, terlibat dengan tim lintas fungsi untuk memastikan kepatuhan komprehensif, dan mempertimbangkan implikasi strategis dari transparansi yang ditingkatkan.</p>
     `,
-    author: "Sarah Chen",
+    author: "Sarah Tanoto",
     authorSlug: "sarah-chen",
     date: "2024-04-15",
-    category: "Corporate Law",
+    category: "Hukum Korporasi",
     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=500&fit=crop",
-    readTime: "6 min read",
+    readTime: "6 menit baca",
   },
 ];
 

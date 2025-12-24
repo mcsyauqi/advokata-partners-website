@@ -37,7 +37,7 @@ export function Hero() {
           >
             <Scale className="h-4 w-4 text-gold" />
             <span className="text-white/90 text-sm font-medium">
-              Excellence in Legal Counsel Since 1995
+              Keunggulan dalam Layanan Hukum Sejak 1995
             </span>
           </motion.div>
 
@@ -48,8 +48,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
           >
-            Protecting Your Interests.{" "}
-            <span className="text-gold">Building Your Future.</span>
+            Melindungi Kepentingan Anda.{" "}
+            <span className="text-gold">Membangun Masa Depan.</span>
           </motion.h1>
 
           {/* Subheading */}
@@ -59,9 +59,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl leading-relaxed"
           >
-            Advokata Partners is a premier corporate and commercial law firm
-            providing strategic legal counsel to businesses, institutions, and
-            individuals worldwide.
+            Advokata Partners adalah firma hukum korporasi dan komersial terkemuka
+            yang menyediakan konsultasi hukum strategis untuk bisnis, institusi,
+            dan individu di seluruh Indonesia.
           </motion.p>
 
           {/* Stats */}
@@ -73,15 +73,15 @@ export function Hero() {
           >
             <div className="border-l-2 border-gold pl-4">
               <div className="text-3xl font-bold text-white">30+</div>
-              <div className="text-white/60 text-sm">Years of Excellence</div>
+              <div className="text-white/60 text-sm">Tahun Pengalaman</div>
             </div>
             <div className="border-l-2 border-gold pl-4">
               <div className="text-3xl font-bold text-white">500+</div>
-              <div className="text-white/60 text-sm">Corporate Clients</div>
+              <div className="text-white/60 text-sm">Klien Korporasi</div>
             </div>
             <div className="border-l-2 border-gold pl-4">
               <div className="text-3xl font-bold text-white">Tier 1</div>
-              <div className="text-white/60 text-sm">Chambers Rankings</div>
+              <div className="text-white/60 text-sm">Peringkat Chambers</div>
             </div>
           </motion.div>
 
@@ -94,7 +94,7 @@ export function Hero() {
           >
             <Button variant="gold" size="lg" asChild>
               <Link href="/contact" className="flex items-center gap-2">
-                Schedule Consultation
+                Konsultasi Gratis
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -104,7 +104,7 @@ export function Hero() {
               asChild
               className="border-white text-white hover:bg-white hover:text-navy"
             >
-              <Link href="/practice-areas">Our Practice Areas</Link>
+              <Link href="/practice-areas">Layanan Hukum Kami</Link>
             </Button>
           </motion.div>
         </div>

@@ -9,24 +9,24 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { name: "Home", href: "/" },
+  { name: "Beranda", href: "/" },
   {
-    name: "Practice Areas",
+    name: "Layanan Hukum",
     href: "/practice-areas",
     children: [
-      { name: "Corporate Law", href: "/practice-areas/corporate-law" },
-      { name: "Mergers & Acquisitions", href: "/practice-areas/mergers-acquisitions" },
-      { name: "Real Estate", href: "/practice-areas/real-estate" },
-      { name: "Intellectual Property", href: "/practice-areas/intellectual-property" },
-      { name: "Litigation", href: "/practice-areas/litigation" },
-      { name: "Banking & Finance", href: "/practice-areas/banking-finance" },
+      { name: "Hukum Korporasi", href: "/practice-areas/corporate-law" },
+      { name: "Merger & Akuisisi", href: "/practice-areas/mergers-acquisitions" },
+      { name: "Properti & Real Estat", href: "/practice-areas/real-estate" },
+      { name: "Kekayaan Intelektual", href: "/practice-areas/intellectual-property" },
+      { name: "Litigasi", href: "/practice-areas/litigation" },
+      { name: "Perbankan & Keuangan", href: "/practice-areas/banking-finance" },
     ],
   },
-  { name: "Attorneys", href: "/attorneys" },
-  { name: "About", href: "/about" },
-  { name: "Insights", href: "/insights" },
-  { name: "Careers", href: "/careers" },
-  { name: "Contact", href: "/contact" },
+  { name: "Tim Pengacara", href: "/attorneys" },
+  { name: "Tentang Kami", href: "/about" },
+  { name: "Artikel", href: "/insights" },
+  { name: "Karir", href: "/careers" },
+  { name: "Kontak", href: "/contact" },
 ];
 
 export function Header() {
@@ -122,14 +122,14 @@ export function Header() {
           {/* CTA & Mobile Menu Button */}
           <div className="flex items-center gap-4">
             <a
-              href="tel:+15551234000"
+              href="tel:+622112345678"
               className={cn(
                 "hidden md:flex items-center gap-2 text-sm font-medium transition-colors",
                 isScrolled ? "text-charcoal" : "text-white/90"
               )}
             >
               <Phone className="h-4 w-4" />
-              (555) 123-4000
+              (021) 1234-5678
             </a>
 
             <Button
@@ -141,7 +141,7 @@ export function Header() {
                 !isScrolled && "border-white text-white hover:bg-white hover:text-navy"
               )}
             >
-              <Link href="/contact">Schedule Consultation</Link>
+              <Link href="/contact">Konsultasi Gratis</Link>
             </Button>
 
             <button
@@ -212,7 +212,7 @@ export function Header() {
                   className="w-full mt-4"
                   asChild
                 >
-                  <Link href="/contact">Schedule Consultation</Link>
+                  <Link href="/contact">Konsultasi Gratis</Link>
                 </Button>
               </div>
             </motion.div>

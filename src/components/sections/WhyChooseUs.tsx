@@ -9,42 +9,42 @@ import {
 } from "@/components/ui/AnimatedSection";
 import { Award, Users, Globe, Shield, TrendingUp, Clock } from "lucide-react";
 
-const features = [
+const keunggulan = [
   {
     icon: Award,
-    title: "Tier 1 Rankings",
+    title: "Peringkat Tier 1",
     description:
-      "Consistently recognized by Chambers, Legal 500, and Best Lawyers for excellence across practice areas.",
+      "Secara konsisten diakui oleh Chambers, Legal 500, dan Best Lawyers untuk keunggulan di berbagai bidang praktik.",
   },
   {
     icon: Users,
-    title: "Client-Centric Approach",
+    title: "Pendekatan Berpusat pada Klien",
     description:
-      "We prioritize understanding your business objectives to deliver practical, results-driven solutions.",
+      "Kami memprioritaskan pemahaman terhadap tujuan bisnis Anda untuk memberikan solusi praktis dan berorientasi hasil.",
   },
   {
     icon: Globe,
-    title: "Global Reach",
+    title: "Jangkauan Nasional",
     description:
-      "With offices in major financial centers and a network of international partners, we handle cross-border matters seamlessly.",
+      "Dengan kantor di kota-kota besar Indonesia dan jaringan mitra internasional, kami menangani perkara lintas batas dengan mulus.",
   },
   {
     icon: Shield,
-    title: "Trusted Advisors",
+    title: "Penasihat Terpercaya",
     description:
-      "Fortune 500 companies and leading institutions rely on us for their most critical legal matters.",
+      "Perusahaan Fortune 500 dan institusi terkemuka mengandalkan kami untuk perkara hukum paling kritis mereka.",
   },
   {
     icon: TrendingUp,
-    title: "Proven Track Record",
+    title: "Rekam Jejak Terbukti",
     description:
-      "Over $50 billion in transactions closed and numerous landmark litigation victories.",
+      "Lebih dari Rp 50 triliun dalam transaksi yang ditutup dan berbagai kemenangan litigasi penting.",
   },
   {
     icon: Clock,
-    title: "Responsive Service",
+    title: "Layanan Responsif",
     description:
-      "We understand the pace of business and provide timely, efficient legal support when you need it.",
+      "Kami memahami kecepatan bisnis dan menyediakan dukungan hukum yang tepat waktu dan efisien saat Anda membutuhkannya.",
   },
 ];
 
@@ -54,13 +54,13 @@ export function WhyChooseUs() {
       <Container>
         <AnimatedSection>
           <SectionHeading
-            title="Why Choose Advokata Partners"
-            subtitle="For nearly three decades, we have been the trusted legal partner for businesses seeking exceptional counsel and strategic advocacy."
+            title="Mengapa Memilih Advokata Partners"
+            subtitle="Selama hampir tiga dekade, kami telah menjadi mitra hukum terpercaya bagi bisnis yang mencari konsultasi luar biasa dan advokasi strategis."
           />
         </AnimatedSection>
 
         <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10 mt-16">
-          {features.map((feature) => (
+          {keunggulan.map((feature) => (
             <StaggerItem key={feature.title}>
               <div className="flex gap-5">
                 <div className="shrink-0">

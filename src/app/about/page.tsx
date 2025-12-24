@@ -14,74 +14,74 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Tentang Kami",
   description:
-    "Learn about Advokata Partners' history, values, and commitment to legal excellence since 1995.",
+    "Pelajari tentang sejarah Advokata Partners, nilai-nilai, dan komitmen terhadap keunggulan hukum sejak 1995.",
 };
 
 const values = [
   {
     icon: Scale,
-    title: "Integrity",
+    title: "Integritas",
     description:
-      "We uphold the highest ethical standards in all our dealings, maintaining trust and transparency with clients, colleagues, and the community.",
+      "Kami menjunjung standar etika tertinggi dalam semua urusan kami, menjaga kepercayaan dan transparansi dengan klien, kolega, dan masyarakat.",
   },
   {
     icon: Target,
-    title: "Excellence",
+    title: "Keunggulan",
     description:
-      "We are committed to delivering exceptional legal services, continuously improving our skills and staying at the forefront of legal developments.",
+      "Kami berkomitmen untuk memberikan layanan hukum luar biasa, terus meningkatkan keterampilan dan tetap terdepan dalam perkembangan hukum.",
   },
   {
     icon: Users,
-    title: "Collaboration",
+    title: "Kolaborasi",
     description:
-      "We work as a unified team, leveraging diverse expertise to provide comprehensive solutions that address all aspects of our clients' needs.",
+      "Kami bekerja sebagai tim yang bersatu, memanfaatkan keahlian beragam untuk memberikan solusi komprehensif yang menangani semua aspek kebutuhan klien.",
   },
   {
     icon: Heart,
-    title: "Client Focus",
+    title: "Fokus pada Klien",
     description:
-      "We prioritize understanding our clients' businesses and objectives, tailoring our approach to deliver practical, results-oriented advice.",
+      "Kami memprioritaskan pemahaman bisnis dan tujuan klien, menyesuaikan pendekatan kami untuk memberikan nasihat praktis dan berorientasi hasil.",
   },
 ];
 
 const milestones = [
   {
     year: "1995",
-    title: "Firm Founded",
+    title: "Firma Didirikan",
     description:
-      "Alexander Petrov establishes Advokata Partners with a vision of providing exceptional corporate legal services.",
+      "Alexander Widodo mendirikan Advokata Partners dengan visi menyediakan layanan hukum korporasi yang luar biasa.",
   },
   {
     year: "2000",
-    title: "Washington DC Office",
+    title: "Kantor Jakarta Selatan",
     description:
-      "Expansion to the nation's capital to better serve clients with regulatory and government affairs needs.",
+      "Ekspansi ke Jakarta Selatan untuk melayani klien dengan kebutuhan korporasi dan komersial yang berkembang.",
   },
   {
     year: "2008",
-    title: "London Office Opens",
+    title: "Kantor Surabaya Dibuka",
     description:
-      "International expansion to serve multinational clients and handle cross-border transactions.",
+      "Ekspansi regional untuk melayani klien multinasional dan menangani transaksi antar kota.",
   },
   {
     year: "2015",
-    title: "Tier 1 Rankings",
+    title: "Peringkat Tier 1",
     description:
-      "Recognized by Chambers Global and Legal 500 with top-tier rankings across multiple practice areas.",
+      "Diakui oleh Chambers dan Legal 500 dengan peringkat teratas di berbagai bidang praktik.",
   },
   {
     year: "2020",
-    title: "50 Attorneys",
+    title: "50 Pengacara",
     description:
-      "Firm grows to 50 attorneys while maintaining its commitment to personalized client service.",
+      "Firma tumbuh menjadi 50 pengacara sambil mempertahankan komitmennya terhadap layanan klien yang personal.",
   },
   {
     year: "2024",
-    title: "Continued Growth",
+    title: "Pertumbuhan Berkelanjutan",
     description:
-      "Celebrating 29 years of excellence with expanded capabilities and continued recognition.",
+      "Merayakan 29 tahun keunggulan dengan kemampuan yang diperluas dan pengakuan berkelanjutan.",
   },
 ];
 
@@ -93,13 +93,14 @@ export default function AboutPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-              About Advokata Partners
+              Tentang Advokata Partners
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              For nearly three decades, Advokata Partners has been a trusted
-              legal partner for businesses and individuals seeking exceptional
-              counsel. Our commitment to excellence, integrity, and client
-              service has made us a leading firm in corporate and commercial law.
+              Selama hampir tiga dekade, Advokata Partners telah menjadi mitra
+              hukum terpercaya bagi bisnis dan individu yang mencari konsultasi
+              luar biasa. Komitmen kami terhadap keunggulan, integritas, dan
+              layanan klien telah menjadikan kami firma terkemuka dalam hukum
+              korporasi dan komersial.
             </p>
           </div>
         </Container>
@@ -111,29 +112,29 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-heading text-3xl font-bold text-navy mb-6">
-                Our Story
+                Cerita Kami
               </h2>
               <div className="space-y-4 text-charcoal/80 leading-relaxed">
                 <p>
-                  Advokata Partners was founded in 1995 by Alexander Petrov with
-                  a clear vision: to create a law firm that combines
-                  sophisticated legal expertise with genuine commitment to client
-                  success. What began as a boutique corporate practice has grown
-                  into a full-service firm with a global reach.
+                  Advokata Partners didirikan pada tahun 1995 oleh Alexander Widodo
+                  dengan visi yang jelas: menciptakan firma hukum yang menggabungkan
+                  keahlian hukum canggih dengan komitmen tulus terhadap kesuksesan klien.
+                  Apa yang dimulai sebagai praktik korporasi boutique telah berkembang
+                  menjadi firma layanan lengkap dengan jangkauan nasional.
                 </p>
                 <p>
-                  Our growth has been guided by a simple philosophy: hire
-                  exceptional attorneys, invest in their development, and focus
-                  relentlessly on client outcomes. This approach has attracted
-                  some of the finest legal talent in the industry and built a
-                  client base that includes Fortune 500 companies, leading
-                  financial institutions, and successful entrepreneurs.
+                  Pertumbuhan kami dipandu oleh filosofi sederhana: rekrut pengacara
+                  luar biasa, investasikan dalam pengembangan mereka, dan fokus
+                  tanpa henti pada hasil klien. Pendekatan ini telah menarik beberapa
+                  talenta hukum terbaik di industri dan membangun basis klien yang
+                  mencakup perusahaan Fortune 500, institusi keuangan terkemuka,
+                  dan pengusaha sukses.
                 </p>
                 <p>
-                  Today, with offices in New York, Washington DC, and London, we
-                  continue to expand our capabilities while maintaining the
-                  personalized attention and strategic focus that have defined our
-                  practice since day one.
+                  Saat ini, dengan kantor di Jakarta Pusat, Jakarta Selatan, dan
+                  Surabaya, kami terus memperluas kemampuan kami sambil mempertahankan
+                  perhatian personal dan fokus strategis yang telah mendefinisikan
+                  praktik kami sejak hari pertama.
                 </p>
               </div>
             </div>
@@ -143,7 +144,7 @@ export default function AboutPage() {
                   30+
                 </div>
                 <div className="text-charcoal/60 text-sm mt-2">
-                  Years of Excellence
+                  Tahun Pengalaman
                 </div>
               </Card>
               <Card hover={false} className="text-center p-8">
@@ -151,7 +152,7 @@ export default function AboutPage() {
                   500+
                 </div>
                 <div className="text-charcoal/60 text-sm mt-2">
-                  Corporate Clients
+                  Klien Korporasi
                 </div>
               </Card>
               <Card hover={false} className="text-center p-8">
@@ -159,13 +160,13 @@ export default function AboutPage() {
                   50+
                 </div>
                 <div className="text-charcoal/60 text-sm mt-2">
-                  Experienced Attorneys
+                  Pengacara Berpengalaman
                 </div>
               </Card>
               <Card hover={false} className="text-center p-8">
                 <div className="text-4xl font-bold text-navy font-heading">3</div>
                 <div className="text-charcoal/60 text-sm mt-2">
-                  Global Offices
+                  Kantor di Indonesia
                 </div>
               </Card>
             </div>
@@ -178,11 +179,11 @@ export default function AboutPage() {
         <Container>
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-4">
-              Our Values
+              Nilai-Nilai Kami
             </h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              These core values guide everything we do and define who we are as a
-              firm.
+              Nilai-nilai inti ini memandu segala yang kami lakukan dan mendefinisikan
+              siapa kami sebagai firma.
             </p>
             <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
           </div>
@@ -212,10 +213,10 @@ export default function AboutPage() {
         <Container>
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-4">
-              Our Journey
+              Perjalanan Kami
             </h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              Key milestones in our growth and development as a leading law firm.
+              Tonggak penting dalam pertumbuhan dan perkembangan kami sebagai firma hukum terkemuka.
             </p>
             <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
           </div>
@@ -268,16 +269,16 @@ export default function AboutPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl font-bold text-navy mb-4">
-              Recognition & Awards
+              Pengakuan & Penghargaan
             </h2>
             <div className="mt-4 h-1 w-20 bg-gold mx-auto" />
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-12">
             {[
-              { name: "Chambers Global", rating: "Band 1 - Corporate/M&A" },
-              { name: "Legal 500", rating: "Tier 1 - Multiple Practice Areas" },
-              { name: "Best Lawyers", rating: "Best Law Firms 2024" },
+              { name: "Chambers Global", rating: "Band 1 - Korporasi/M&A" },
+              { name: "Legal 500", rating: "Tier 1 - Berbagai Bidang Praktik" },
+              { name: "Best Lawyers", rating: "Firma Hukum Terbaik 2024" },
               { name: "Benchmark Litigation", rating: "Top Tier" },
             ].map((award) => (
               <div key={award.name} className="text-center">
@@ -299,16 +300,16 @@ export default function AboutPage() {
         <Container>
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-heading text-3xl font-bold text-white mb-4">
-              Join Our Team
+              Bergabunglah dengan Tim Kami
             </h2>
             <p className="text-white/80 mb-8">
-              We're always looking for talented attorneys and professionals who
-              share our commitment to excellence.
+              Kami selalu mencari pengacara dan profesional berbakat yang berbagi
+              komitmen kami terhadap keunggulan.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="gold" size="lg" asChild>
                 <Link href="/careers">
-                  View Opportunities
+                  Lihat Lowongan
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Link>
               </Button>
@@ -318,7 +319,7 @@ export default function AboutPage() {
                 asChild
                 className="border-white text-white hover:bg-white hover:text-navy"
               >
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">Hubungi Kami</Link>
               </Button>
             </div>
           </div>
