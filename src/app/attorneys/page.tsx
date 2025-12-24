@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Card, CardContent } from "@/components/ui/Card";
 import { attorneys } from "@/data/attorneys";
@@ -38,8 +39,15 @@ export default function AttorneysPage() {
             {attorneys.map((attorney) => (
               <Link key={attorney.id} href={`/attorneys/${attorney.slug}`}>
                 <Card className="h-full group">
-                  {/* Photo Placeholder */}
+                  {/* Photo */}
                   <div className="relative aspect-[4/5] bg-navy/10 overflow-hidden">
+                    <Image
+                      src={attorney.image}
+                      alt={attorney.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                       <div className="flex gap-3">
                         <span className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-gold transition-colors">
@@ -49,15 +57,6 @@ export default function AttorneysPage() {
                           <Phone className="h-4 w-4 text-white" />
                         </span>
                       </div>
-                    </div>
-                    {/* Placeholder initials */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-6xl font-heading font-bold text-navy/20">
-                        {attorney.name
-                          .split(" ")
-                          .map((n) => n[0])
-                          .join("")}
-                      </span>
                     </div>
                   </div>
 

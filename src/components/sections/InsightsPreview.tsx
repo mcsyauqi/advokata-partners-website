@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card, CardContent } from "@/components/ui/Card";
@@ -31,13 +32,16 @@ export function InsightsPreview() {
             <StaggerItem key={insight.id}>
               <Link href={`/insights/${insight.slug}`}>
                 <Card className="h-full group">
-                  {/* Image Placeholder */}
+                  {/* Image */}
                   <div className="aspect-video bg-navy/5 relative overflow-hidden">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-navy/20 font-heading text-2xl font-bold">
-                        {insight.category}
-                      </span>
-                    </div>
+                    <Image
+                      src={insight.image}
+                      alt={insight.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="bg-gold text-white text-xs font-medium px-3 py-1 rounded-full">
                         {insight.category}

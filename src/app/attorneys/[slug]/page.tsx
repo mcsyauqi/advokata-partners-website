@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -14,7 +15,6 @@ import {
   Award,
   GraduationCap,
   Scale,
-  ArrowRight,
 } from "lucide-react";
 
 interface PageProps {
@@ -66,13 +66,15 @@ export default async function AttorneyPage({ params }: PageProps) {
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             {/* Photo */}
             <div className="lg:col-span-1">
-              <div className="aspect-[3/4] bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-8xl font-heading font-bold text-white/20">
-                  {attorney.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
-                </span>
+              <div className="relative aspect-[3/4] bg-white/10 rounded-lg overflow-hidden">
+                <Image
+                  src={attorney.image}
+                  alt={attorney.name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  priority
+                />
               </div>
             </div>
 

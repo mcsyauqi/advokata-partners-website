@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -30,8 +31,15 @@ export function AttorneysPreview() {
             <StaggerItem key={attorney.id}>
               <Link href={`/attorneys/${attorney.slug}`}>
                 <div className="group">
-                  {/* Photo Placeholder */}
+                  {/* Photo */}
                   <div className="relative aspect-[3/4] bg-navy/10 rounded-lg overflow-hidden mb-4">
+                    <Image
+                      src={attorney.image}
+                      alt={attorney.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                       <div className="flex gap-3">
                         <span className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-gold transition-colors">
@@ -41,15 +49,6 @@ export function AttorneysPreview() {
                           <Phone className="h-4 w-4 text-white" />
                         </span>
                       </div>
-                    </div>
-                    {/* Placeholder initials */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-4xl font-heading font-bold text-navy/30">
-                        {attorney.name
-                          .split(" ")
-                          .map((n) => n[0])
-                          .join("")}
-                      </span>
                     </div>
                   </div>
 

@@ -30,7 +30,7 @@ export const insights: Insight[] = [
     authorSlug: "alexander-petrov",
     date: "2024-01-15",
     category: "Mergers & Acquisitions",
-    image: "/insights/cross-border-ma.jpg",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
     readTime: "8 min read",
   },
   {
@@ -61,7 +61,7 @@ export const insights: Insight[] = [
     authorSlug: "marcus-wellington",
     date: "2024-02-20",
     category: "Intellectual Property",
-    image: "/insights/ai-ip.jpg",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
     readTime: "6 min read",
   },
   {
@@ -86,7 +86,7 @@ export const insights: Insight[] = [
     authorSlug: "victoria-chambers",
     date: "2024-03-05",
     category: "Real Estate",
-    image: "/insights/real-estate-trends.jpg",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop",
     readTime: "7 min read",
   },
   {
@@ -117,7 +117,7 @@ export const insights: Insight[] = [
     authorSlug: "elena-rodriguez",
     date: "2024-03-18",
     category: "Litigation",
-    image: "/insights/arbitration.jpg",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=500&fit=crop",
     readTime: "9 min read",
   },
   {
@@ -148,7 +148,7 @@ export const insights: Insight[] = [
     authorSlug: "jonathan-sterling",
     date: "2024-04-02",
     category: "Banking & Finance",
-    image: "/insights/private-credit.jpg",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=500&fit=crop",
     readTime: "7 min read",
   },
   {
@@ -176,7 +176,7 @@ export const insights: Insight[] = [
     authorSlug: "sarah-chen",
     date: "2024-04-15",
     category: "Corporate Law",
-    image: "/insights/sec-updates.jpg",
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=500&fit=crop",
     readTime: "6 min read",
   },
 ];

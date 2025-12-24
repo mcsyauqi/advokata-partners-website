@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Card, CardContent } from "@/components/ui/Card";
 import { insights } from "@/data/insights";
@@ -69,12 +70,16 @@ export default function InsightsPage() {
               <Card className="overflow-hidden group">
                 <div className="grid md:grid-cols-2">
                   {/* Image */}
-                  <div className="aspect-video md:aspect-auto bg-navy/10 relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-navy/20 font-heading text-4xl font-bold">
-                        Featured
-                      </span>
-                    </div>
+                  <div className="aspect-video md:aspect-auto md:min-h-[400px] bg-navy/10 relative overflow-hidden">
+                    <Image
+                      src={insights[0].image}
+                      alt={insights[0].title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="bg-gold text-white text-xs font-medium px-3 py-1 rounded-full">
                         {insights[0].category}
@@ -129,12 +134,15 @@ export default function InsightsPage() {
               <Link key={insight.id} href={`/insights/${insight.slug}`}>
                 <Card className="h-full group">
                   {/* Image */}
-                  <div className="aspect-video bg-navy/5 relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-navy/20 font-heading text-xl font-bold">
-                        {insight.category}
-                      </span>
-                    </div>
+                  <div className="aspect-video bg-navy/5 relative overflow-hidden">
+                    <Image
+                      src={insight.image}
+                      alt={insight.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="bg-gold text-white text-xs font-medium px-3 py-1 rounded-full">
                         {insight.category}

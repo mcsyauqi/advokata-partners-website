@@ -20,9 +20,9 @@
   --gold-dark: #8B6914;
   --ivory-dark: #F5F0E8;
 
-  /* Fonts */
-  --font-playfair: "Playfair Display", Georgia, serif;
-  --font-source-serif: "Source Serif 4", Georgia, serif;
+  /* Professional Fonts */
+  --font-heading: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @theme inline {
@@ -39,8 +39,8 @@
   --color-ivory-dark: var(--ivory-dark);
   --color-burgundy: var(--burgundy);
   --color-silver: var(--silver);
-  --font-heading: var(--font-playfair);
-  --font-body: var(--font-source-serif);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 html {
@@ -50,15 +50,19 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-source-serif);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .font-heading {
-  font-family: var(--font-playfair);
+  font-family: var(--font-heading);
 }
 
 /* Custom scrollbar */
@@ -100,6 +104,7 @@ a {
 .prose h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .prose ul {

@@ -8,7 +8,7 @@ export const attorneys: Attorney[] = [
     title: "Managing Partner",
     email: "a.petrov@advokata.com",
     phone: "+1 (555) 123-4001",
-    image: "/attorneys/attorney-1.jpg",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop&crop=face",
     practiceAreas: ["Corporate Law", "Mergers & Acquisitions"],
     education: [
       "J.D., Harvard Law School, 1992",
@@ -29,7 +29,7 @@ export const attorneys: Attorney[] = [
     title: "Senior Partner",
     email: "v.chambers@advokata.com",
     phone: "+1 (555) 123-4002",
-    image: "/attorneys/attorney-2.jpg",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&crop=face",
     practiceAreas: ["Real Estate", "Banking & Finance"],
     education: [
       "J.D., Stanford Law School, 1997",
@@ -51,7 +51,7 @@ export const attorneys: Attorney[] = [
     title: "Partner",
     email: "m.wellington@advokata.com",
     phone: "+1 (555) 123-4003",
-    image: "/attorneys/attorney-3.jpg",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=face",
     practiceAreas: ["Intellectual Property", "Technology"],
     education: [
       "J.D., Columbia Law School, 2001",
@@ -73,7 +73,7 @@ export const attorneys: Attorney[] = [
     title: "Partner",
     email: "e.rodriguez@advokata.com",
     phone: "+1 (555) 123-4004",
-    image: "/attorneys/attorney-4.jpg",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=800&fit=crop&crop=face",
     practiceAreas: ["Litigation", "International Arbitration"],
     education: [
       "J.D., NYU School of Law, 2003",
@@ -95,7 +95,7 @@ export const attorneys: Attorney[] = [
     title: "Partner",
     email: "j.sterling@advokata.com",
     phone: "+1 (555) 123-4005",
-    image: "/attorneys/attorney-5.jpg",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=800&fit=crop&crop=face",
     practiceAreas: ["Banking & Finance", "Private Equity"],
     education: [
       "J.D., University of Chicago Law School, 2005",
@@ -116,7 +116,7 @@ export const attorneys: Attorney[] = [
     title: "Partner",
     email: "s.chen@advokata.com",
     phone: "+1 (555) 123-4006",
-    image: "/attorneys/attorney-6.jpg",
+    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&h=800&fit=crop&crop=face",
     practiceAreas: ["Corporate Law", "Securities"],
     education: [
       "J.D., Yale Law School, 2008",

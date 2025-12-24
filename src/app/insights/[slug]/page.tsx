@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Card, CardContent } from "@/components/ui/Card";
@@ -11,7 +12,6 @@ import {
   Calendar,
   Clock,
   User,
-  Share2,
   Linkedin,
   Twitter,
   Mail,
@@ -102,8 +102,24 @@ export default async function InsightPage({ params }: PageProps) {
         </Container>
       </section>
 
+      {/* Featured Image */}
+      <section className="relative -mt-8 mb-8">
+        <Container size="narrow">
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
+            <Image
+              src={insight.image}
+              alt={insight.title}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 1024px) 100vw, 900px"
+            />
+          </div>
+        </Container>
+      </section>
+
       {/* Article Content */}
-      <section className="py-16 bg-ivory">
+      <section className="py-8 bg-ivory">
         <Container size="narrow">
           <div className="grid lg:grid-cols-4 gap-12">
             {/* Share Sidebar */}
@@ -144,13 +160,14 @@ export default async function InsightPage({ params }: PageProps) {
                 <Card hover={false} className="mt-12">
                   <CardContent className="p-8">
                     <div className="flex flex-col sm:flex-row gap-6">
-                      <div className="w-24 h-24 bg-navy/10 rounded-full flex items-center justify-center shrink-0">
-                        <span className="text-2xl font-heading font-bold text-navy/30">
-                          {author.name
-                            .split(" ")
-                            .map((n) => n[0])
-                            .join("")}
-                        </span>
+                      <div className="relative w-24 h-24 rounded-full overflow-hidden shrink-0">
+                        <Image
+                          src={author.image}
+                          alt={author.name}
+                          fill
+                          className="object-cover"
+                          sizes="96px"
+                        />
                       </div>
                       <div>
                         <p className="text-sm text-charcoal/60 mb-1">
@@ -188,6 +205,15 @@ export default async function InsightPage({ params }: PageProps) {
                     {relatedInsights.map((related) => (
                       <Link key={related.id} href={`/insights/${related.slug}`}>
                         <Card className="h-full">
+                          <div className="relative aspect-video">
+                            <Image
+                              src={related.image}
+                              alt={related.title}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 100vw, 300px"
+                            />
+                          </div>
                           <CardContent className="p-4">
                             <p className="text-xs text-gold font-medium mb-2">
                               {related.category}
