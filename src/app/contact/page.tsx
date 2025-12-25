@@ -17,7 +17,17 @@ import {
   Clock,
   Send,
   CheckCircle,
+  MessageCircle,
+  Calendar,
+  Shield,
+  Users,
+  ArrowRight,
+  Building2,
+  Globe,
+  Award,
+  HelpCircle,
 } from "lucide-react";
+import Link from "next/link";
 
 const contactSchema = z.object({
   firstName: z.string().min(2, "Nama depan wajib diisi"),
@@ -359,6 +369,303 @@ export default function ContactPage() {
             Peta interaktif akan ditampilkan di sini
           </p>
         </div>
+      </section>
+
+      {/* Why Contact Us */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-4">
+              Mengapa Menghubungi Kami?
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              Kami berkomitmen untuk memberikan layanan terbaik dan respons
+              cepat untuk setiap pertanyaan Anda.
+            </p>
+            <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: Clock,
+                title: "Respons Cepat",
+                description: "Tim kami merespons dalam waktu 24 jam kerja.",
+              },
+              {
+                icon: Shield,
+                title: "Kerahasiaan Terjamin",
+                description: "Semua informasi dilindungi oleh kerahasiaan pengacara-klien.",
+              },
+              {
+                icon: Users,
+                title: "Tim Ahli",
+                description: "Langsung terhubung dengan pengacara berpengalaman.",
+              },
+              {
+                icon: MessageCircle,
+                title: "Konsultasi Awal Gratis",
+                description: "Diskusi pertama tanpa biaya untuk memahami kebutuhan Anda.",
+              },
+            ].map((item) => (
+              <Card key={item.title} hover={false}>
+                <CardContent className="p-6 text-center">
+                  <item.icon className="h-10 w-10 text-gold mx-auto mb-4" />
+                  <h3 className="font-heading text-lg font-semibold text-navy mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-charcoal/70 text-sm">
+                    {item.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Consultation Process */}
+      <section className="py-20 bg-ivory">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-4">
+              Proses Konsultasi
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              Langkah-langkah sederhana untuk memulai konsultasi dengan tim kami.
+            </p>
+            <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8">
+              {[
+                {
+                  step: "1",
+                  title: "Kirim Pertanyaan",
+                  description: "Isi formulir atau hubungi kami langsung.",
+                },
+                {
+                  step: "2",
+                  title: "Konfirmasi",
+                  description: "Tim kami akan menghubungi dalam 24 jam.",
+                },
+                {
+                  step: "3",
+                  title: "Konsultasi",
+                  description: "Diskusi mendalam dengan pengacara ahli.",
+                },
+                {
+                  step: "4",
+                  title: "Proposal",
+                  description: "Kami siapkan solusi dan estimasi biaya.",
+                },
+              ].map((item, index) => (
+                <div key={item.step} className="relative">
+                  <Card hover={false} className="h-full">
+                    <CardContent className="p-6 text-center">
+                      <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span className="text-gold font-bold text-lg">{item.step}</span>
+                      </div>
+                      <h3 className="font-heading font-semibold text-navy mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-charcoal/70 text-sm">
+                        {item.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                  {index < 3 && (
+                    <div className="hidden md:block absolute top-1/3 -right-4 w-8">
+                      <ArrowRight className="h-6 w-6 text-gold/30" />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Practice Areas Quick Links */}
+      <section className="py-20 bg-navy">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-white mb-4">
+              Bidang Layanan Kami
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Pilih bidang praktik yang sesuai dengan kebutuhan Anda untuk
+              langsung terhubung dengan tim ahli.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "Hukum Korporasi", slug: "corporate-law" },
+              { name: "Merger & Akuisisi", slug: "mergers-acquisitions" },
+              { name: "Properti & Real Estat", slug: "real-estate" },
+              { name: "Kekayaan Intelektual", slug: "intellectual-property" },
+              { name: "Litigasi", slug: "litigation" },
+              { name: "Perbankan & Keuangan", slug: "banking-finance" },
+            ].map((area) => (
+              <Link
+                key={area.slug}
+                href={`/practice-areas/${area.slug}`}
+                className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors group"
+              >
+                <span className="text-white font-medium group-hover:text-gold transition-colors">
+                  {area.name}
+                </span>
+                <ArrowRight className="h-5 w-5 text-gold" />
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Button variant="gold" size="lg" asChild>
+              <Link href="/practice-areas">
+                Lihat Semua Layanan
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
+            </Button>
+          </div>
+        </Container>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-heading text-3xl font-bold text-navy mb-4">
+                Pertanyaan Umum
+              </h2>
+              <div className="mt-4 h-1 w-20 bg-gold mx-auto" />
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "Apakah konsultasi pertama berbayar?",
+                  a: "Konsultasi awal untuk memahami kebutuhan Anda tidak dikenakan biaya. Setelah itu, kami akan memberikan proposal dengan struktur biaya yang jelas.",
+                },
+                {
+                  q: "Berapa lama respons untuk pertanyaan yang dikirim?",
+                  a: "Kami berusaha merespons semua pertanyaan dalam waktu 24 jam kerja. Untuk urusan mendesak, silakan hubungi hotline kami yang tersedia 24/7.",
+                },
+                {
+                  q: "Apakah bisa berkonsultasi secara online?",
+                  a: "Ya, kami menyediakan konsultasi via video call untuk klien yang tidak dapat datang langsung ke kantor kami.",
+                },
+                {
+                  q: "Bagaimana dengan kerahasiaan informasi saya?",
+                  a: "Semua informasi yang Anda sampaikan dilindungi oleh kerahasiaan pengacara-klien sesuai dengan kode etik profesi advokat.",
+                },
+                {
+                  q: "Apakah Advokata Partners menangani klien individual?",
+                  a: "Ya, meskipun fokus utama kami adalah klien korporasi, kami juga melayani klien individual untuk berbagai kebutuhan hukum tertentu.",
+                },
+              ].map((faq, idx) => (
+                <Card key={idx} hover={false}>
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <HelpCircle className="h-6 w-6 text-gold shrink-0 mt-0.5" />
+                      <div>
+                        <h3 className="font-heading font-semibold text-navy mb-2">
+                          {faq.q}
+                        </h3>
+                        <p className="text-charcoal/70 text-sm leading-relaxed">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Awards & Recognition */}
+      <section className="py-16 bg-ivory">
+        <Container>
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+              Kepercayaan Klien Kami
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            {[
+              { name: "Chambers Global", rating: "Band 1" },
+              { name: "Legal 500", rating: "Tier 1" },
+              { name: "Best Lawyers", rating: "2024" },
+              { name: "Benchmark Litigation", rating: "Top Tier" },
+            ].map((award) => (
+              <div key={award.name} className="text-center">
+                <Award className="h-10 w-10 text-gold mx-auto mb-2" />
+                <div className="font-heading font-bold text-navy text-sm">
+                  {award.name}
+                </div>
+                <div className="text-charcoal/60 text-xs mt-1">
+                  {award.rating}
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Alternative Contact Methods */}
+      <section className="py-16 bg-navy">
+        <Container>
+          <div className="grid lg:grid-cols-3 gap-8 text-center">
+            <div className="p-6">
+              <Building2 className="h-10 w-10 text-gold mx-auto mb-4" />
+              <h3 className="font-heading text-xl font-bold text-white mb-2">
+                Kunjungi Kantor
+              </h3>
+              <p className="text-white/70 text-sm mb-4">
+                Jadwalkan kunjungan ke salah satu kantor kami
+              </p>
+              <Button variant="gold" size="sm" asChild>
+                <Link href="#offices">
+                  Lihat Lokasi
+                </Link>
+              </Button>
+            </div>
+            <div className="p-6 border-x border-white/10">
+              <Globe className="h-10 w-10 text-gold mx-auto mb-4" />
+              <h3 className="font-heading text-xl font-bold text-white mb-2">
+                Video Conference
+              </h3>
+              <p className="text-white/70 text-sm mb-4">
+                Konsultasi online melalui Zoom atau Google Meet
+              </p>
+              <Button variant="gold" size="sm" asChild>
+                <a href="mailto:info@advokata.co.id?subject=Permintaan Video Conference">
+                  Jadwalkan
+                </a>
+              </Button>
+            </div>
+            <div className="p-6">
+              <Phone className="h-10 w-10 text-gold mx-auto mb-4" />
+              <h3 className="font-heading text-xl font-bold text-white mb-2">
+                Telepon Langsung
+              </h3>
+              <p className="text-white/70 text-sm mb-4">
+                Bicara langsung dengan tim kami
+              </p>
+              <Button variant="gold" size="sm" asChild>
+                <a href="tel:+622112345678">
+                  (021) 1234-5678
+                </a>
+              </Button>
+            </div>
+          </div>
+        </Container>
       </section>
     </>
   );

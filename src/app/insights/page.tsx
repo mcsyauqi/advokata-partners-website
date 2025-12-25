@@ -3,8 +3,22 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Card, CardContent } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
 import { insights } from "@/data/insights";
-import { Calendar, Clock, User, ArrowRight } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  User,
+  ArrowRight,
+  BookOpen,
+  FileText,
+  Mic,
+  Video,
+  Download,
+  TrendingUp,
+  Award,
+  Users,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Artikel Hukum",
@@ -205,6 +219,351 @@ export default function InsightsPage() {
                 Berlangganan
               </button>
             </form>
+          </div>
+        </Container>
+      </section>
+
+      {/* Content Types */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-4">
+              Jenis Konten
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              Kami menyediakan berbagai format konten untuk memenuhi kebutuhan
+              informasi hukum Anda.
+            </p>
+            <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: FileText,
+                title: "Artikel Hukum",
+                description: "Analisis mendalam tentang perkembangan hukum terbaru dan implikasinya.",
+                count: "50+ artikel",
+              },
+              {
+                icon: BookOpen,
+                title: "Legal Alerts",
+                description: "Update cepat tentang perubahan regulasi dan kebijakan yang perlu Anda ketahui.",
+                count: "Mingguan",
+              },
+              {
+                icon: Video,
+                title: "Webinar",
+                description: "Sesi interaktif dengan pengacara kami membahas topik hukum populer.",
+                count: "Bulanan",
+              },
+              {
+                icon: Download,
+                title: "Panduan & E-book",
+                description: "Materi komprehensif yang dapat diunduh untuk referensi Anda.",
+                count: "20+ panduan",
+              },
+            ].map((type) => (
+              <Card key={type.title} hover={false}>
+                <CardContent className="p-6 text-center">
+                  <type.icon className="h-10 w-10 text-gold mx-auto mb-4" />
+                  <h3 className="font-heading text-lg font-semibold text-navy mb-2">
+                    {type.title}
+                  </h3>
+                  <p className="text-charcoal/70 text-sm mb-3">
+                    {type.description}
+                  </p>
+                  <span className="text-gold font-medium text-sm">{type.count}</span>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Popular Topics */}
+      <section className="py-20 bg-ivory">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-4">
+              Topik Populer
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              Topik-topik yang paling banyak dibaca oleh klien dan profesional hukum.
+            </p>
+            <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "UU Cipta Kerja & Implikasinya",
+                count: "15 artikel",
+                trending: true,
+              },
+              {
+                title: "Regulasi Fintech & Pembayaran Digital",
+                count: "12 artikel",
+                trending: true,
+              },
+              {
+                title: "M&A di Era Digital",
+                count: "10 artikel",
+                trending: false,
+              },
+              {
+                title: "Perlindungan Data Pribadi (PDP)",
+                count: "18 artikel",
+                trending: true,
+              },
+              {
+                title: "Investasi Asing di Indonesia",
+                count: "8 artikel",
+                trending: false,
+              },
+              {
+                title: "Penyelesaian Sengketa Bisnis",
+                count: "14 artikel",
+                trending: false,
+              },
+            ].map((topic) => (
+              <Card key={topic.title} className="group cursor-pointer">
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors">
+                      {topic.title}
+                    </h3>
+                    {topic.trending && (
+                      <TrendingUp className="h-5 w-5 text-gold shrink-0" />
+                    )}
+                  </div>
+                  <p className="text-charcoal/60 text-sm">{topic.count}</p>
+                  <div className="mt-4 flex items-center text-gold font-medium text-sm group-hover:gap-2 transition-all">
+                    Lihat Artikel
+                    <ArrowRight className="h-4 w-4 ml-1" />
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Featured Authors */}
+      <section className="py-20 bg-navy">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-white mb-4">
+              Penulis Unggulan
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Artikel kami ditulis oleh pengacara berpengalaman dengan keahlian
+              di berbagai bidang praktik.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: "Alexander Widodo",
+                role: "Managing Partner",
+                expertise: "Hukum Korporasi, M&A",
+                articles: 25,
+                image: "/images/attorneys/alexander-widodo.jpg",
+              },
+              {
+                name: "Sarah Tanujaya",
+                role: "Senior Partner",
+                expertise: "Litigasi Komersial",
+                articles: 18,
+                image: "/images/attorneys/sarah-tanujaya.jpg",
+              },
+              {
+                name: "Michael Hartono",
+                role: "Partner",
+                expertise: "Perbankan & Keuangan",
+                articles: 22,
+                image: "/images/attorneys/michael-hartono.jpg",
+              },
+              {
+                name: "Dewi Kusuma",
+                role: "Partner",
+                expertise: "Real Estat",
+                articles: 15,
+                image: "/images/attorneys/dewi-kusuma.jpg",
+              },
+            ].map((author) => (
+              <Card key={author.name} hover={false} className="bg-white/5 border-white/10">
+                <CardContent className="p-6 text-center">
+                  <div className="relative w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                    <Image
+                      src={author.image}
+                      alt={author.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-white">
+                    {author.name}
+                  </h3>
+                  <p className="text-gold text-sm">{author.role}</p>
+                  <p className="text-white/60 text-sm mt-2">{author.expertise}</p>
+                  <p className="text-white/80 text-sm mt-3">
+                    {author.articles} artikel dipublikasikan
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Upcoming Events */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-4">
+              Acara Mendatang
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              Bergabunglah dengan webinar dan seminar kami untuk mendapatkan
+              insight langsung dari pengacara kami.
+            </p>
+            <div className="mt-6 h-1 w-20 bg-gold mx-auto" />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Webinar: Update UU Perlindungan Data Pribadi",
+                date: "15 Januari 2025",
+                time: "14:00 - 16:00 WIB",
+                type: "Webinar",
+                speakers: ["Sarah Tanujaya", "Jonathan Wijaya"],
+              },
+              {
+                title: "Seminar: Strategi M&A di 2025",
+                date: "22 Januari 2025",
+                time: "09:00 - 12:00 WIB",
+                type: "Seminar",
+                speakers: ["Alexander Widodo", "Michael Hartono"],
+              },
+              {
+                title: "Workshop: Due Diligence dalam Akuisisi",
+                date: "5 Februari 2025",
+                time: "13:00 - 17:00 WIB",
+                type: "Workshop",
+                speakers: ["Michael Hartono", "Dewi Kusuma"],
+              },
+            ].map((event) => (
+              <Card key={event.title} hover={false}>
+                <CardContent className="p-6">
+                  <span className="inline-block bg-gold/10 text-gold text-xs font-medium px-3 py-1 rounded-full mb-4">
+                    {event.type}
+                  </span>
+                  <h3 className="font-heading text-lg font-semibold text-navy mb-3">
+                    {event.title}
+                  </h3>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center gap-2 text-sm text-charcoal/70">
+                      <Calendar className="h-4 w-4" />
+                      {event.date}
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-charcoal/70">
+                      <Clock className="h-4 w-4" />
+                      {event.time}
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-charcoal/70">
+                      <Users className="h-4 w-4" />
+                      {event.speakers.join(", ")}
+                    </div>
+                  </div>
+                  <Button variant="secondary" size="sm" className="w-full">
+                    Daftar Sekarang
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Publications & Awards */}
+      <section className="py-20 bg-ivory">
+        <Container>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-heading text-3xl font-bold text-navy mb-6">
+                Publikasi & Kontribusi
+              </h2>
+              <p className="text-charcoal/80 leading-relaxed mb-6">
+                Pengacara kami secara aktif berkontribusi pada perkembangan
+                hukum Indonesia melalui berbagai publikasi dan partisipasi
+                dalam organisasi profesi.
+              </p>
+              <div className="space-y-4">
+                {[
+                  "Kontributor tetap Hukumonline dan Kontan",
+                  "Penulis buku tentang Hukum Bisnis Indonesia",
+                  "Pembicara di konferensi hukum internasional",
+                  "Anggota tim penyusun regulasi OJK",
+                  "Kolumnis di media hukum nasional",
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <Award className="h-5 w-5 text-gold shrink-0 mt-0.5" />
+                    <span className="text-charcoal/80">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <h3 className="font-heading text-xl font-bold text-navy mb-6">
+                Unduh Materi Gratis
+              </h3>
+              <div className="space-y-4">
+                {[
+                  { title: "Panduan Pendirian PT di Indonesia", pages: "32 halaman" },
+                  { title: "Checklist Due Diligence M&A", pages: "15 halaman" },
+                  { title: "FAQ UU Perlindungan Data Pribadi", pages: "24 halaman" },
+                  { title: "Template Perjanjian Kerja", pages: "10 halaman" },
+                ].map((doc) => (
+                  <div
+                    key={doc.title}
+                    className="flex items-center justify-between p-4 bg-ivory rounded-lg hover:bg-ivory-dark transition-colors cursor-pointer"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Download className="h-5 w-5 text-gold" />
+                      <div>
+                        <p className="font-medium text-navy text-sm">{doc.title}</p>
+                        <p className="text-charcoal/60 text-xs">{doc.pages}</p>
+                      </div>
+                    </div>
+                    <ArrowRight className="h-4 w-4 text-charcoal/40" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-navy">
+        <Container>
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="font-heading text-2xl font-bold text-white mb-4">
+              Butuh Konsultasi Hukum?
+            </h2>
+            <p className="text-white/80 mb-8">
+              Artikel kami hanya memberikan informasi umum. Untuk nasihat hukum
+              yang sesuai dengan situasi Anda, silakan konsultasikan dengan tim kami.
+            </p>
+            <Button variant="gold" size="lg" asChild>
+              <Link href="/contact">
+                Jadwalkan Konsultasi
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
+            </Button>
           </div>
         </Container>
       </section>

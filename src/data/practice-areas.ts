@@ -129,6 +129,142 @@ export const practiceAreas: PracticeArea[] = [
   },
 ];
 
+// Additional practice areas
+export const additionalPracticeAreas: PracticeArea[] = [
+  {
+    id: "7",
+    slug: "securities",
+    title: "Hukum Sekuritas",
+    shortDescription:
+      "Kepatuhan regulasi pasar modal, penawaran umum, dan transaksi sekuritas.",
+    description:
+      "Praktik Hukum Sekuritas kami memberikan nasihat komprehensif mengenai regulasi pasar modal Indonesia dan internasional. Kami mendampingi klien dalam penawaran umum perdana (IPO), penawaran umum terbatas (rights issue), obligasi, dan berbagai instrumen pasar modal lainnya. Tim kami memiliki pengalaman luas bekerja dengan OJK dan BEI untuk memastikan kepatuhan regulasi.",
+    icon: "Coins",
+    keyServices: [
+      "Initial Public Offering (IPO)",
+      "Rights Issue & Secondary Offering",
+      "Penerbitan Obligasi & Sukuk",
+      "Kepatuhan Regulasi OJK",
+      "Pengungkapan & Pelaporan Berkala",
+      "Program ESOP & MSOP",
+      "Delisting & Go Private",
+      "Akuisisi Perusahaan Terbuka",
+    ],
+    relatedAreas: ["corporate-law", "banking-finance", "mergers-acquisitions"],
+  },
+  {
+    id: "8",
+    slug: "private-equity",
+    title: "Private Equity",
+    shortDescription:
+      "Strukturisasi dana, investasi, dan transaksi private equity.",
+    description:
+      "Tim Private Equity kami mewakili sponsor PE, investor institusional, dan perusahaan portofolio dalam seluruh siklus investasi. Dari pembentukan dana hingga exit, kami memberikan nasihat strategis tentang strukturisasi transaksi, negosiasi, dan eksekusi. Pengalaman kami mencakup transaksi leveraged buyout, growth equity, dan venture capital.",
+    icon: "Briefcase",
+    keyServices: [
+      "Pembentukan & Strukturisasi Dana",
+      "Leveraged Buyout",
+      "Growth Equity Investment",
+      "Venture Capital",
+      "Uji Tuntas (Due Diligence)",
+      "Perjanjian Pemegang Saham",
+      "Manajemen Portofolio",
+      "Exit Strategy & Realisasi",
+    ],
+    relatedAreas: ["mergers-acquisitions", "corporate-law", "banking-finance"],
+  },
+  {
+    id: "9",
+    slug: "antitrust",
+    title: "Hukum Persaingan Usaha",
+    shortDescription:
+      "Kepatuhan antitrust, clearance M&A, dan pembelaan perkara persaingan.",
+    description:
+      "Praktik Hukum Persaingan Usaha kami memberikan nasihat tentang seluruh aspek hukum antitrust Indonesia. Kami mendampingi klien dalam notifikasi merger ke KPPU, program kepatuhan persaingan, dan pembelaan terhadap investigasi kartel atau penyalahgunaan posisi dominan. Tim kami memiliki pengalaman bekerja dengan KPPU dan memahami pendekatan penegakan hukum persaingan di Indonesia.",
+    icon: "BadgeCheck",
+    keyServices: [
+      "Notifikasi Merger ke KPPU",
+      "Program Kepatuhan Persaingan",
+      "Investigasi & Pembelaan KPPU",
+      "Analisis Persaingan dalam M&A",
+      "Perjanjian Distribusi & Keagenan",
+      "Audit Persaingan Usaha",
+      "Litigasi Persaingan Usaha",
+      "Konseling Persaingan Harian",
+    ],
+    relatedAreas: ["mergers-acquisitions", "litigation", "corporate-law"],
+  },
+  {
+    id: "10",
+    slug: "environmental",
+    title: "Hukum Lingkungan",
+    shortDescription:
+      "Kepatuhan lingkungan, perizinan, dan penyelesaian sengketa lingkungan.",
+    description:
+      "Praktik Hukum Lingkungan kami membantu klien menavigasi regulasi lingkungan yang kompleks di Indonesia. Kami memberikan nasihat tentang perizinan lingkungan (AMDAL, UKL-UPL), kepatuhan regulasi, dan penyelesaian sengketa lingkungan. Tim kami juga berpengalaman dalam transaksi yang melibatkan isu lingkungan seperti akuisisi lahan dan pengembangan properti.",
+    icon: "Leaf",
+    keyServices: [
+      "Dokumen AMDAL & UKL-UPL",
+      "Perizinan Lingkungan",
+      "Kepatuhan Regulasi Lingkungan",
+      "Due Diligence Lingkungan",
+      "Remediasi & Pemulihan",
+      "Sengketa Lingkungan",
+      "Perubahan Iklim & Carbon Credit",
+      "ESG Advisory",
+    ],
+    relatedAreas: ["real-estate", "corporate-law", "litigation"],
+  },
+  {
+    id: "11",
+    slug: "technology",
+    title: "Teknologi & Digital",
+    shortDescription:
+      "Regulasi teknologi, perlindungan data, dan transaksi digital.",
+    description:
+      "Praktik Teknologi & Digital kami memberikan nasihat tentang seluruh aspek hukum teknologi di era digital. Dari regulasi fintech hingga perlindungan data pribadi, e-commerce hingga cybersecurity, tim kami membantu klien menavigasi lanskap regulasi yang berkembang pesat. Kami juga berpengalaman dalam transaksi teknologi termasuk lisensi software, pengembangan aplikasi, dan akuisisi startup teknologi.",
+    icon: "Cpu",
+    keyServices: [
+      "Kepatuhan Perlindungan Data (UU PDP)",
+      "Regulasi Fintech & Pembayaran",
+      "E-commerce & Marketplace",
+      "Lisensi Software & SaaS",
+      "Cybersecurity & Data Breach",
+      "AI & Emerging Technologies",
+      "Transaksi Startup Teknologi",
+      "Platform & Content Regulation",
+    ],
+    relatedAreas: ["intellectual-property", "corporate-law", "banking-finance"],
+  },
+  {
+    id: "12",
+    slug: "employment",
+    title: "Hukum Ketenagakerjaan",
+    shortDescription:
+      "Hubungan kerja, kepatuhan ketenagakerjaan, dan sengketa perburuhan.",
+    description:
+      "Praktik Hukum Ketenagakerjaan kami memberikan nasihat komprehensif tentang seluruh aspek hubungan kerja. Kami membantu klien dengan penyusunan kebijakan HR, kontrak kerja, PHK, dan penyelesaian sengketa perburuhan. Tim kami berpengalaman dalam menangani perkara di Pengadilan Hubungan Industrial dan negosiasi dengan serikat pekerja.",
+    icon: "Users",
+    keyServices: [
+      "Kebijakan HR & Employment Handbook",
+      "Kontrak Kerja & PKWT",
+      "PHK & Pesangon",
+      "Hubungan Industrial",
+      "Negosiasi dengan Serikat Pekerja",
+      "Litigasi PHI",
+      "Expatriate & Work Permit",
+      "Due Diligence Ketenagakerjaan",
+    ],
+    relatedAreas: ["litigation", "corporate-law", "mergers-acquisitions"],
+  },
+];
+
+// Combine all practice areas
+export const allPracticeAreas: PracticeArea[] = [
+  ...practiceAreas,
+  ...additionalPracticeAreas,
+];
+
 export function getPracticeAreaBySlug(slug: string): PracticeArea | undefined {
-  return practiceAreas.find((area) => area.slug === slug);
+  return allPracticeAreas.find((area) => area.slug === slug);
 }

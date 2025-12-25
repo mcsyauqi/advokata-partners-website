@@ -26,6 +26,7 @@ const linkCepat = [
   { name: "Karir", href: "/careers" },
   { name: "Hubungi Kami", href: "/contact" },
   { name: "Kebijakan Privasi", href: "/privacy" },
+  { name: "Syarat & Ketentuan", href: "/terms" },
 ];
 
 const kantorKami = [
